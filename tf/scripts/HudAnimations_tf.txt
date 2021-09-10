@@ -353,9 +353,8 @@ event OvertimeShow
 
 event HudSnapShotReminderIn
 {
-	Animate ScreenshotPanelBG		Position	"c-83 13"	Spline 0.0 0.2
-	Animate ScreenshotIcon			Position	"c-80 5"	Spline 0.0 0.2
-	Animate ScreenshotLabel			Position	"c-43 27"	Spline 0.0 0.2
+	Animate ScreenshotPanel		Position	"c-83 -50"	Linear 0.0 0.001
+	Animate ScreenshotPanel		Position	"c-83 13"	Spline 0.001 0.2
 }
 
 

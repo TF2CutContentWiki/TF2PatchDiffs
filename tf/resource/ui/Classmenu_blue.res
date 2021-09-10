@@ -722,4 +722,185 @@
 		"font"			"HudFontMediumSmallSecondary"
 		"fgcolor"		"TanLight"
 	}	
+	
+	"numScout" [$WIN32]
+	{
+		"ControlName"	"CTFLabel"
+		"fieldName"		"numScout"
+		"xpos"			"c-300"
+		"ypos"			"10"
+		"zpos"			"5"
+		"wide"			"50"
+		"tall"			"12"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"%numScout%"
+		"textAlignment"	"center"
+		"font"			"MenuClassBuckets"
+		"fgcolor"		"TanLight"
+	}	
+	
+	"numSoldier" [$WIN32]
+	{
+		"ControlName"	"CTFLabel"
+		"fieldName"		"numSoldier"
+		"xpos"			"c-250"
+		"ypos"			"10"
+		"zpos"			"5"
+		"wide"			"50"
+		"tall"			"12"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"%numSoldier%"
+		"textAlignment"	"center"
+		"font"			"MenuClassBuckets"
+		"fgcolor"		"TanLight"
+	}		
+	
+	"numPyro" [$WIN32]
+	{
+		"ControlName"	"CTFLabel"
+		"fieldName"		"numPyro"
+		"xpos"			"c-200"
+		"ypos"			"10"
+		"zpos"			"5"
+		"wide"			"50"
+		"tall"			"12"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"%numPyro%"
+		"textAlignment"	"center"
+		"font"			"MenuClassBuckets"
+		"fgcolor"		"TanLight"
+	}			
+	
+	"numDemoman" [$WIN32]
+	{
+		"ControlName"	"CTFLabel"
+		"fieldName"		"numDemoman"
+		"xpos"			"c-110"
+		"ypos"			"10"
+		"zpos"			"5"
+		"wide"			"50"
+		"tall"			"12"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"%numDemoman%"
+		"textAlignment"	"center"
+		"font"			"MenuClassBuckets"
+		"fgcolor"		"TanLight"
+	}				
+	
+	"numHeavy" [$WIN32]
+	{
+		"ControlName"	"CTFLabel"
+		"fieldName"		"numHeavy"
+		"xpos"			"c-60"
+		"ypos"			"10"
+		"zpos"			"5"
+		"wide"			"50"
+		"tall"			"12"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"%numHeavy%"
+		"textAlignment"	"center"
+		"font"			"MenuClassBuckets"
+		"fgcolor"		"TanLight"
+	}					
+	
+	"numEngineer" [$WIN32]
+	{
+		"ControlName"	"CTFLabel"
+		"fieldName"		"numEngineer"
+		"xpos"			"c-10"
+		"ypos"			"10"
+		"zpos"			"5"
+		"wide"			"50"
+		"tall"			"12"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"%numEngineer%"
+		"textAlignment"	"center"
+		"font"			"MenuClassBuckets"
+		"fgcolor"		"TanLight"
+	}						
+	
+	"numMedic" [$WIN32]
+	{
+		"ControlName"	"CTFLabel"
+		"fieldName"		"numMedic"
+		"xpos"			"c78"
+		"ypos"			"10"
+		"zpos"			"5"
+		"wide"			"50"
+		"tall"			"12"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"%numMedic%"
+		"textAlignment"	"center"
+		"font"			"MenuClassBuckets"
+		"fgcolor"		"TanLight"
+	}							
+	
+	"numSniper" [$WIN32]
+	{
+		"ControlName"	"CTFLabel"
+		"fieldName"		"numSniper"
+		"xpos"			"c128"
+		"ypos"			"10"
+		"zpos"			"5"
+		"wide"			"50"
+		"tall"			"12"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"%numSniper%"
+		"textAlignment"	"center"
+		"font"			"MenuClassBuckets"
+		"fgcolor"		"TanLight"
+	}						
+	
+	"numSpy" [$WIN32]
+	{
+		"ControlName"	"CTFLabel"
+		"fieldName"		"numSpy"
+		"xpos"			"c178"
+		"ypos"			"10"
+		"zpos"			"5"
+		"wide"			"50"
+		"tall"			"12"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"%numSpy%"
+		"textAlignment"	"center"
+		"font"			"MenuClassBuckets"
+		"fgcolor"		"TanLight"
+	}								
+
 }
