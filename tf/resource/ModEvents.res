@@ -256,7 +256,7 @@
 	"teamplay_flag_event"
 	{
 		"player"	"short"			// player this event involves
-		"eventtype"	"short"			// pick up, capture, defend
+		"eventtype"	"short"			// pick up, capture, defend, dropped
 	}
 	"teamplay_win_panel"		
 	{
@@ -337,6 +337,17 @@
 	}
 	"playing_commentary"
 	{
+	}
+	
+	"player_chargedeployed"
+	{
+		"userid"	"short"		// user ID who changed class
+	}
+	
+	"player_builtobject"
+	{
+		"userid"	"short"		// user ID of the spy
+		"object"	"byte"
 	}
 }
 

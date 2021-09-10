@@ -163,7 +163,7 @@
 			{
 				"ControlName"	"CTFLabel"
 				"fieldName"		"BuildingLabel"
-				"font"			"DefaultVerySmall"
+				"font"			"DefaultSmall"
 				"xpos"			"0"
 				"ypos"			"5"
 				"wide"			"200"
