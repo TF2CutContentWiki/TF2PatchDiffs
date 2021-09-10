@@ -13,17 +13,17 @@
 
 	response "PyroTauntPrimary"
 	{
-		scene "scenes/Player/Pyro/low/taunt01_v1.vcd"
-		scene "scenes/Player/Pyro/low/taunt01_v2.vcd"
-		scene "scenes/Player/Pyro/low/taunt01_v3.vcd"
+		scene "scenes/player/pyro/low/taunt01_v1.vcd"
+		scene "scenes/player/pyro/low/taunt01_v2.vcd"
+		scene "scenes/player/pyro/low/taunt01_v3.vcd"
 	}
 	response "PyroTauntSecondary"
 	{
-		scene "scenes/Player/Pyro/low/taunt02.vcd"
+		scene "scenes/player/pyro/low/taunt02.vcd"
 	}
 	response "PyroTauntMelee"
 	{
-		scene "scenes/Player/Pyro/low/taunt03.vcd"
+		scene "scenes/player/pyro/low/taunt03.vcd"
 	}
 
 	rule PyroTauntPlayerPrimary
@@ -50,21 +50,21 @@
 //------------------------------------------------------------------------------------------------------------
 	response "HeavyTauntPrimary"
 	{
-		scene "scenes/Player/Heavy/low/taunt01.vcd"
-		scene "scenes/Player/Heavy/low/taunt01_v2.vcd"
-		scene "scenes/Player/Heavy/low/taunt01_v3.vcd"
+		scene "scenes/player/heavy/low/taunt01.vcd"
+		scene "scenes/player/heavy/low/taunt01_v2.vcd"
+		scene "scenes/player/heavy/low/taunt01_v3.vcd"
 	}
 	response "HeavyTauntSecondary"
 	{
-		scene "scenes/Player/Heavy/low/taunt02.vcd"
-		scene "scenes/Player/Heavy/low/taunt02_v1.vcd"
-		scene "scenes/Player/Heavy/low/taunt02_v2.vcd"
+		scene "scenes/player/heavy/low/taunt02.vcd"
+		scene "scenes/player/heavy/low/taunt02_v1.vcd"
+		scene "scenes/player/heavy/low/taunt02_v2.vcd"
 	}
 	response "HeavyTauntMelee"
 	{
-		scene "scenes/Player/Heavy/low/taunt03.vcd"
-		scene "scenes/Player/Heavy/low/taunt03_v1.vcd"
-		scene "scenes/Player/Heavy/low/taunt03_v2.vcd"
+		scene "scenes/player/heavy/low/taunt03.vcd"
+		scene "scenes/player/heavy/low/taunt03_v1.vcd"
+		scene "scenes/player/heavy/low/taunt03_v2.vcd"
 	}
 
 	rule HeavyTauntPlayerPrimary
@@ -85,7 +85,7 @@
 
 	Response PlayerExpressionIdleHeavy
 	{
-		scene "scenes\player\heavy\low\idleloop01.vcd"
+		scene "scenes/player/heavy/low/idleloop01.vcd"
 	}
 	Rule PlayerExpressionIdleHeavy
 	{
@@ -95,7 +95,7 @@
 
 	Response PlayerExpressionFiringMinigunHeavy
 	{
-		scene "scenes\player\heavy\low\attackMinigun02.vcd"
+		scene "scenes/player/heavy/low/attackMinigun02.vcd"
 	}
 	Rule PlayerExpressionFiringMinigunHeavy
 	{
@@ -105,8 +105,8 @@
 	
 	Response HeavyTimeFiringMinigunShort
 	{
-		scene "scenes\player\heavy\low\attackMinigun_vocal02.vcd"
-		scene "scenes\player\heavy\low\attackMinigun_vocal03.vcd"
+		scene "scenes/player/heavy/low/attackminigun_vocal02.vcd"
+		scene "scenes/player/heavy/low/attackminigun_vocal03.vcd"
 	}
 	Rule HeavyTimeFiringMinigunShort
 	{
@@ -116,8 +116,8 @@
 	
 	Response HeavyTimeFiringMinigunLong
 	{
-		scene "scenes\player\heavy\low\specialcompleted11.vcd"
-		scene "scenes\player\heavy\low\laughShort03.vcd"
+		scene "scenes/player/heavy/low/specialcompleted11.vcd"
+		scene "scenes/player/heavy/low/laughShort03.vcd"
 	}
 	Rule HeavyTimeFiringMinigunLong
 	{
@@ -127,8 +127,8 @@
 	
 	Response HeavyTimeFiringMinigunReallyLong
 	{
-		scene "scenes\player\heavy\low\attackMinigun_vocal05.vcd"
-		scene "scenes\player\heavy\low\specialcompleted07.vcd"
+		scene "scenes/player/heavy/low/attackMinigun_vocal05.vcd"
+		scene "scenes/player/heavy/low/specialcompleted07.vcd"
 	}
 	Rule HeavyTimeFiringMinigunReallyLong
 	{
@@ -138,7 +138,7 @@
 	
 	Response PlayerExpressionIdleHurtHeavy
 	{
-		scene "scenes\player\heavy\low\idleloopHurt01.vcd"
+		scene "scenes/player/heavy/low/idleloopHurt01.vcd"
 	}
 	Rule PlayerExpressionIdleHurtHeavy
 	{
@@ -148,8 +148,8 @@
 	
 	Response HeavyFireMinigun
 	{
-		//scene "scenes\player\heavy\low\attackMinigun01.vcd" *bug*
-		scene "scenes\player\heavy\low\attackMinigun02.vcd"
+		//scene "scenes/player/heavy/low/attackMinigun01.vcd" *bug*
+		scene "scenes/player/heavy/low/attackMinigun02.vcd"
 	}
 	Rule HeavyFireMinigun
 	{
@@ -159,7 +159,7 @@
 	
 	Response HeavyWindMinigun
 	{
-		scene "scenes\player\heavy\low\attackWindup01.vcd"
+		scene "scenes/player/heavy/low/attackWindup01.vcd"
 	}
 	Rule HeavyWindMinigunHeavy
 	{
@@ -169,7 +169,7 @@
 	
 	Response PlayerExpressionAttackHeavy
 	{
-		scene "scenes\player\heavy\low\attack01.vcd"
+		scene "scenes/player/heavy/low/attack01.vcd"
 	}
 	Rule PlayerExpressionAttackHeavy
 	{
@@ -183,20 +183,20 @@
 //------------------------------------------------------------------------------------------------------------
 	response "EngineerTauntPrimary"
 	{
-		scene "scenes/Player/Engineer/low/taunt01_vocal01.vcd"
-		scene "scenes/Player/Engineer/low/taunt01_vocal02.vcd"
-		scene "scenes/Player/Engineer/low/taunt01_vocal03.vcd"
-		scene "scenes/Player/Engineer/low/taunt01_vocal04.vcd"
+		scene "scenes/player/engineer/low/taunt01_vocal01.vcd"
+		scene "scenes/player/engineer/low/taunt01_vocal02.vcd"
+		scene "scenes/player/engineer/low/taunt01_vocal03.vcd"
+		scene "scenes/player/engineer/low/taunt01_vocal04.vcd"
 	}
 	response "EngineerTauntSecondary"
 	{
-		scene "scenes/Player/Engineer/low/taunt02_vocal01.vcd"
-		scene "scenes/Player/Engineer/low/taunt02_vocal02.vcd"
-		scene "scenes/Player/Engineer/low/taunt02_vocal03.vcd"
+		scene "scenes/player/engineer/low/taunt02_vocal01.vcd"
+		scene "scenes/player/engineer/low/taunt02_vocal02.vcd"
+		scene "scenes/player/engineer/low/taunt02_vocal03.vcd"
 	}
 	response "EngineerTauntMelee"
 	{
-		scene "scenes/Player/Engineer/low/taunt03.vcd"
+		scene "scenes/player/engineer/low/taunt03.vcd"
 	}
 
 	rule EngineerTauntPlayerPrimary
@@ -217,7 +217,7 @@
 
 	Response PlayerExpressionIdleEngineer
 	{
-		scene "scenes\player\Engineer\low\idleloop01.vcd"
+		scene "scenes/player/engineer/low/idleloop01.vcd"
 	}
 	Rule PlayerExpressionIdleEngineer
 	{
@@ -227,7 +227,7 @@
 	
 	Response PlayerExpressionIdleHurtEngineer
 	{
-		scene "scenes\player\Engineer\low\idleloopHurt01.vcd"
+		scene "scenes/player/engineer/low/idleloopHurt01.vcd"
 	}
 	Rule PlayerExpressionIdleHurtEngineer
 	{
@@ -237,7 +237,7 @@
 	
 	Response PlayerExpressionAttackEngineer
 	{
-		scene "scenes\player\Engineer\low\attack01.vcd"
+		scene "scenes/player/engineer/low/attack01.vcd"
 	}
 	Rule PlayerExpressionAttackEngineer
 	{
@@ -252,18 +252,18 @@
 //------------------------------------------------------------------------------------------------------------
 	response "MedicTauntPrimary"
 	{
-		scene "scenes/Player/Medic/low/taunt01_vocal01.vcd"
-		scene "scenes/Player/Medic/low/taunt01_vocal03.vcd"
-		scene "scenes/Player/Medic/low/taunt01_vocal04.vcd"
-		scene "scenes/Player/Medic/low/taunt01_vocal05.vcd"
+		scene "scenes/player/medic/low/taunt01_vocal01.vcd"
+		scene "scenes/player/medic/low/taunt01_vocal03.vcd"
+		scene "scenes/player/medic/low/taunt01_vocal04.vcd"
+		scene "scenes/player/medic/low/taunt01_vocal05.vcd"
 	}
 	response "MedicTauntSecondary"
 	{
-		scene "scenes/Player/Medic/low/taunt02_v1.vcd"
+		scene "scenes/player/medic/low/taunt02_v1.vcd"
 	}
 	response "MedicTauntMelee"
 	{
-		scene "scenes/Player/Medic/low/taunt03.vcd"
+		scene "scenes/player/medic/low/taunt03.vcd"
 	}
 
 	rule MedicTauntPlayerPrimary
@@ -284,7 +284,7 @@
 
 	Response PlayerExpressionIdleMedic
 	{
-		scene "scenes\player\Medic\low\idleloop01.vcd"
+		scene "scenes/player/medic/low/idleloop01.vcd"
 	}
 	Rule PlayerExpressionIdleMedic
 	{
@@ -294,7 +294,7 @@
 	
 	Response PlayerExpressionIdleHurtMedic
 	{
-		scene "scenes\player\Medic\low\idleloopHurt01.vcd"
+		scene "scenes/player/medic/low/idleloopHurt01.vcd"
 	}
 	Rule PlayerExpressionIdleHurtMedic
 	{
@@ -304,7 +304,7 @@
 	
 	Response PlayerExpressionAttackMedic
 	{
-		scene "scenes\player\Medic\low\attack01.vcd"
+		scene "scenes/player/medic/low/attack01.vcd"
 	}
 	Rule PlayerExpressionAttackMedic
 	{
@@ -319,21 +319,21 @@
 //------------------------------------------------------------------------------------------------------------
 	response "SoldierTauntPrimary"
 	{
-		scene "scenes/Player/Soldier/low/taunt01_v1.vcd"
-		scene "scenes/Player/Soldier/low/taunt01_v2.vcd"
-		scene "scenes/Player/Soldier/low/taunt01_v3.vcd"
+		scene "scenes/player/soldier/low/taunt01_v1.vcd"
+		scene "scenes/player/soldier/low/taunt01_v2.vcd"
+		scene "scenes/player/soldier/low/taunt01_v3.vcd"
 	}
 	response "SoldierTauntSecondary"
 	{
-		scene "scenes/Player/Soldier/low/taunt02_v1.vcd"
-		scene "scenes/Player/Soldier/low/taunt02_v2.vcd"
+		scene "scenes/player/soldier/low/taunt02_v1.vcd"
+		scene "scenes/player/soldier/low/taunt02_v2.vcd"
 	}
 	response "SoldierTauntMelee"
 	{
-		scene "scenes/Player/Soldier/low/taunt03_v1.vcd"
-		scene "scenes/Player/Soldier/low/taunt03_v2.vcd"
-		scene "scenes/Player/Soldier/low/taunt03_v3.vcd"
-		scene "scenes/Player/Soldier/low/taunt03_v4.vcd"
+		scene "scenes/player/soldier/low/taunt03_v1.vcd"
+		scene "scenes/player/soldier/low/taunt03_v2.vcd"
+		scene "scenes/player/soldier/low/taunt03_v3.vcd"
+		scene "scenes/player/soldier/low/taunt03_v4.vcd"
 	}
 
 	rule SoldierTauntPlayerPrimary
@@ -354,7 +354,7 @@
 
 	Response PlayerExpressionIdleSoldier
 	{
-		scene "scenes\player\Soldier\low\idleloop01.vcd"
+		scene "scenes/player/soldier/low/idleloop01.vcd"
 	}
 	Rule PlayerExpressionIdleSoldier
 	{
@@ -363,7 +363,7 @@
 	}
 	Response PlayerExpressionIdleHurtSoldier
 	{
-		scene "scenes\player\Soldier\low\idleloopHurt01.vcd"
+		scene "scenes/player/soldier/low/idleloopHurt01.vcd"
 	}
 	Rule PlayerExpressionIdleHurtSoldier
 	{
@@ -373,7 +373,7 @@
 	
 	Response PlayerExpressionAttackSoldier
 	{
-		scene "scenes\player\Soldier\low\attack01.vcd"
+		scene "scenes/player/soldier/low/attack01.vcd"
 	}
 	Rule PlayerExpressionAttackSoldier
 	{
@@ -388,24 +388,24 @@
 //------------------------------------------------------------------------------------------------------------
 	response "ScoutTauntPrimary"
 	{
-		scene "scenes/Player/Scout/low/taunt01_vocal01.vcd"
-		scene "scenes/Player/Scout/low/taunt01_vocal02.vcd"
-		scene "scenes/Player/Scout/low/taunt01_vocal03.vcd"
+		scene "scenes/player/scout/low/taunt01_vocal01.vcd"
+		scene "scenes/player/scout/low/taunt01_vocal02.vcd"
+		scene "scenes/player/scout/low/taunt01_vocal03.vcd"
 	}
 	response "ScoutTauntSecondary"
 	{
-		scene "scenes/Player/Scout/low/taunt02_vocal01.vcd"
-		scene "scenes/Player/Scout/low/taunt02_vocal02.vcd"
-		scene "scenes/Player/Scout/low/taunt02_vocal03.vcd"
+		scene "scenes/player/scout/low/taunt02_vocal01.vcd"
+		scene "scenes/player/scout/low/taunt02_vocal02.vcd"
+		scene "scenes/player/scout/low/taunt02_vocal03.vcd"
 	}
 	response "ScoutTauntMelee"
 	{
-		scene "scenes/Player/Scout/low/taunt03_vocal01.vcd"
-		scene "scenes/Player/Scout/low/taunt03_vocal02.vcd"
-		scene "scenes/Player/Scout/low/taunt03_vocal03.vcd"
-		scene "scenes/Player/Scout/low/taunt03_vocal04.vcd"
-		scene "scenes/Player/Scout/low/taunt03_vocal05.vcd"
-		scene "scenes/Player/Scout/low/taunt03_vocal06.vcd"
+		scene "scenes/player/scout/low/taunt03_vocal01.vcd"
+		scene "scenes/player/scout/low/taunt03_vocal02.vcd"
+		scene "scenes/player/scout/low/taunt03_vocal03.vcd"
+		scene "scenes/player/scout/low/taunt03_vocal04.vcd"
+		scene "scenes/player/scout/low/taunt03_vocal05.vcd"
+		scene "scenes/player/scout/low/taunt03_vocal06.vcd"
 	}
 
 	rule ScoutTauntPlayerPrimary
@@ -426,7 +426,7 @@
 
 	Response PlayerExpressionIdleScout
 	{
-		scene "scenes\player\Scout\low\idleloop01.vcd"
+		scene "scenes/player/scout/low/idleloop01.vcd"
 	}
 	Rule PlayerExpressionIdleScout
 	{
@@ -436,7 +436,7 @@
 	
 	Response PlayerExpressionIdleHurtScout
 	{
-		scene "scenes\player\Scout\low\idleloopHurt01.vcd"
+		scene "scenes/player/scout/low/idleloopHurt01.vcd"
 	}
 	Rule PlayerExpressionIdleHurtScout
 	{
@@ -446,7 +446,7 @@
 	
 	Response PlayerExpressionAttackScout
 	{
-		scene "scenes\player\Scout\low\attack01.vcd"
+		scene "scenes/player/scout/low/attack01.vcd"
 	}
 	Rule PlayerExpressionAttackScout
 	{
@@ -461,21 +461,21 @@
 //------------------------------------------------------------------------------------------------------------
 	response "SniperTauntPrimary"
 	{
-		scene "scenes/Player/Sniper/low/taunt01_v1.vcd"
-		scene "scenes/Player/Sniper/low/taunt01_v2.vcd"
-		scene "scenes/Player/Sniper/low/taunt01_v3.vcd"
-		scene "scenes/Player/Sniper/low/taunt01_v4.vcd"
-		scene "scenes/Player/Sniper/low/taunt01_v5.vcd"
+		scene "scenes/player/medic/low/taunt01_v1.vcd"
+		scene "scenes/player/medic/low/taunt01_v2.vcd"
+		scene "scenes/player/medic/low/taunt01_v3.vcd"
+		scene "scenes/player/medic/low/taunt01_v4.vcd"
+		scene "scenes/player/medic/low/taunt01_v5.vcd"
 	}
 	response "SniperTauntSecondary"
 	{
-		scene "scenes/Player/Sniper/low/taunt02_v1.vcd"
-		scene "scenes/Player/Sniper/low/taunt02_v2.vcd"
+		scene "scenes/player/medic/low/taunt02_v1.vcd"
+		scene "scenes/player/medic/low/taunt02_v2.vcd"
 	}
 	response "SniperTauntMelee"
-	{		scene "scenes/Player/Sniper/low/taunt03_v1.vcd"
-		        scene "scenes/Player/Sniper/low/taunt03_v2.vcd"
-		        scene "scenes/Player/Sniper/low/taunt03_v3.vcd"
+	{		scene "scenes/player/medic/low/taunt03_v1.vcd"
+		        scene "scenes/player/medic/low/taunt03_v2.vcd"
+		        scene "scenes/player/medic/low/taunt03_v3.vcd"
 	}
 
 	rule SniperTauntPlayerPrimary
@@ -496,7 +496,7 @@
 	
 	Response PlayerExpressionIdleSniper
 	{
-		scene "scenes\player\Sniper\low\idleloop01.vcd"
+		scene "scenes/player/medic/low/idleloop01.vcd"
 	}
 	Rule PlayerExpressionIdleSniper
 	{
@@ -505,7 +505,7 @@
 	}
 	response PlayerExpressionIdleDeployedSniper
 	{
-		scene "scenes/Player/Sniper/low/idleloopDeployed01.vcd"
+		scene "scenes/player/medic/low/idleloopDeployed01.vcd"
 	}
 	rule PlayerExpressionIdleDeployedSniper
 	{
@@ -514,7 +514,7 @@
 	}
 	Response PlayerExpressionIdleHurtSniper
 	{
-		scene "scenes\player\Sniper\low\idleloopHurt01.vcd"
+		scene "scenes/player/medic/low/idleloopHurt01.vcd"
 	}
 	Rule PlayerExpressionIdleHurtSniper
 	{
@@ -524,7 +524,7 @@
 
 	Response PlayerExpressionAttackSniper
 	{
-		scene "scenes\player\Sniper\low\attack01.vcd"
+		scene "scenes/player/medic/low/attack01.vcd"
 	}
 	Rule PlayerExpressionAttackSniper
 	{
@@ -540,28 +540,28 @@
 //------------------------------------------------------------------------------------------------------------
 	response "SpyTauntPrimary"
 	{
-		scene "scenes/Player/Spy/low/taunt01_v1.vcd"
-		scene "scenes/Player/Spy/low/taunt01_v2.vcd"
-		scene "scenes/Player/Spy/low/taunt01_v3.vcd"
-		scene "scenes/Player/Spy/low/taunt01_v4.vcd"
-		scene "scenes/Player/Spy/low/taunt01_v5.vcd"
+		scene "scenes/player/spy/low/taunt01_v1.vcd"
+		scene "scenes/player/spy/low/taunt01_v2.vcd"
+		scene "scenes/player/spy/low/taunt01_v3.vcd"
+		scene "scenes/player/spy/low/taunt01_v4.vcd"
+		scene "scenes/player/spy/low/taunt01_v5.vcd"
 	}
 	response "SpyTauntSecondary"
 	{
-		scene "scenes/Player/Spy/low/taunt02.vcd"
+		scene "scenes/player/spy/low/taunt02.vcd"
 	}
 	response "SpyTauntMelee"
 	{
-		scene "scenes/Player/Spy/low/taunt03_v1.vcd"
-		scene "scenes/Player/Spy/low/taunt03_v2.vcd"
+		scene "scenes/player/spy/low/taunt03_v1.vcd"
+		scene "scenes/player/spy/low/taunt03_v2.vcd"
 	}
 	response "SpyTauntPDA"
 	{
-		scene "scenes/Player/Spy/low/taunt04_v1.vcd"
-		scene "scenes/Player/Spy/low/taunt04_v2.vcd"
-		scene "scenes/Player/Spy/low/taunt04_v3.vcd"
-		scene "scenes/Player/Spy/low/taunt04_v4.vcd"
-		scene "scenes/Player/Spy/low/taunt04_v5.vcd"
+		scene "scenes/player/spy/low/taunt04_v1.vcd"
+		scene "scenes/player/spy/low/taunt04_v2.vcd"
+		scene "scenes/player/spy/low/taunt04_v3.vcd"
+		scene "scenes/player/spy/low/taunt04_v4.vcd"
+		scene "scenes/player/spy/low/taunt04_v5.vcd"
 	}
 
 	rule SpyTauntPlayerPrimary
@@ -587,7 +587,7 @@
 
 	Response PlayerExpressionIdleSpy
 	{
-		scene "scenes\player\Spy\low\idleloop01.vcd"
+		scene "scenes/player/spy/low/idleloop01.vcd"
 	}
 	Rule PlayerExpressionIdleSpy
 	{
@@ -597,7 +597,7 @@
 
 	Response PlayerExpressionAttackSpy
 	{
-		scene "scenes\player\Spy\low\attack01.vcd"
+		scene "scenes/player/spy/low/attack01.vcd"
 	}
 	Rule PlayerExpressionAttackSpy
 	{
@@ -611,18 +611,18 @@
 //------------------------------------------------------------------------------------------------------------
 	response "DemomanTauntPrimary"
 	{
-		scene "scenes/Player/Demoman/low/taunt01.vcd"
+		scene "scenes/player/demoman/low/taunt01.vcd"
 	}
 	response "DemomanTauntSecondary"
 	{
-		scene "scenes/Player/Demoman/low/taunt02.vcd"
+		scene "scenes/player/demoman/low/taunt02.vcd"
 		
 	}
 	response "DemomanTauntMelee"
 	{
-		scene "scenes/Player/Demoman/low/taunt03_v1.vcd"
-	  scene "scenes/Player/Demoman/low/taunt03_v2.vcd"
-	  scene "scenes/Player/Demoman/low/taunt03_v3.vcd"
+		scene "scenes/player/demoman/low/taunt03_v1.vcd"
+	  scene "scenes/player/demoman/low/taunt03_v2.vcd"
+	  scene "scenes/player/demoman/low/taunt03_v3.vcd"
 	}
 
 	rule DemomanTauntPlayerPrimary
@@ -643,7 +643,7 @@
 
 	Response PlayerExpressionIdleDemoman
 	{
-		scene "scenes\player\Demoman\low\idleloop01.vcd"
+		scene "scenes/player/demoman/low/idleloop01.vcd"
 	}
 	Rule PlayerExpressionIdleDemoman
 	{
@@ -653,7 +653,7 @@
 	
 	Response PlayerExpressionIdleHurtDemoman
 	{
-		scene "scenes\player\Demoman\low\idleloopHurt01.vcd"
+		scene "scenes/player/demoman/low/idleloopHurt01.vcd"
 	}
 	Rule PlayerExpressionIdleHurtDemoman
 	{
@@ -662,7 +662,7 @@
 	}
 	Response PlayerExpressionAttackDemoman
 	{
-		scene "scenes\player\Demoman\low\attack01.vcd"
+		scene "scenes/player/demoman/low/attack01.vcd"
 	}
 	Rule PlayerExpressionAttackDemoman
 	{
