@@ -461,21 +461,21 @@
 //------------------------------------------------------------------------------------------------------------
 	response "SniperTauntPrimary"
 	{
-		scene "scenes/player/medic/low/taunt01_v1.vcd"
-		scene "scenes/player/medic/low/taunt01_v2.vcd"
-		scene "scenes/player/medic/low/taunt01_v3.vcd"
-		scene "scenes/player/medic/low/taunt01_v4.vcd"
-		scene "scenes/player/medic/low/taunt01_v5.vcd"
+		scene "scenes/player/sniper/low/taunt01_v1.vcd"
+		scene "scenes/player/sniper/low/taunt01_v2.vcd"
+		scene "scenes/player/sniper/low/taunt01_v3.vcd"
+		scene "scenes/player/sniper/low/taunt01_v4.vcd"
+		scene "scenes/player/sniper/low/taunt01_v5.vcd"
 	}
 	response "SniperTauntSecondary"
 	{
-		scene "scenes/player/medic/low/taunt02_v1.vcd"
-		scene "scenes/player/medic/low/taunt02_v2.vcd"
+		scene "scenes/player/sniper/low/taunt02_v1.vcd"
+		scene "scenes/player/sniper/low/taunt02_v2.vcd"
 	}
 	response "SniperTauntMelee"
-	{		scene "scenes/player/medic/low/taunt03_v1.vcd"
-		        scene "scenes/player/medic/low/taunt03_v2.vcd"
-		        scene "scenes/player/medic/low/taunt03_v3.vcd"
+	{		scene "scenes/player/sniper/low/taunt03_v1.vcd"
+		        scene "scenes/player/sniper/low/taunt03_v2.vcd"
+		        scene "scenes/player/sniper/low/taunt03_v3.vcd"
 	}
 
 	rule SniperTauntPlayerPrimary
@@ -496,7 +496,7 @@
 	
 	Response PlayerExpressionIdleSniper
 	{
-		scene "scenes/player/medic/low/idleloop01.vcd"
+		scene "scenes/player/sniper/low/idleloop01.vcd"
 	}
 	Rule PlayerExpressionIdleSniper
 	{
@@ -505,7 +505,7 @@
 	}
 	response PlayerExpressionIdleDeployedSniper
 	{
-		scene "scenes/player/medic/low/idleloopDeployed01.vcd"
+		scene "scenes/player/sniper/low/idleloopDeployed01.vcd"
 	}
 	rule PlayerExpressionIdleDeployedSniper
 	{
@@ -514,7 +514,7 @@
 	}
 	Response PlayerExpressionIdleHurtSniper
 	{
-		scene "scenes/player/medic/low/idleloopHurt01.vcd"
+		scene "scenes/player/sniper/low/idleloopHurt01.vcd"
 	}
 	Rule PlayerExpressionIdleHurtSniper
 	{
@@ -524,7 +524,7 @@
 
 	Response PlayerExpressionAttackSniper
 	{
-		scene "scenes/player/medic/low/attack01.vcd"
+		scene "scenes/player/sniper/low/attack01.vcd"
 	}
 	Rule PlayerExpressionAttackSniper
 	{
