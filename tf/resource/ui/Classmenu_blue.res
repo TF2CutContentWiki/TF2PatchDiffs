@@ -538,183 +538,188 @@
 		}
 	}		
 	
-	"numScout" [$WIN32]
+	"countImage0" [$WIN32]
 	{
-		"ControlName"	"CTFLabel"
-		"fieldName"		"numScout"
-		"xpos"			"c-300"
-		"ypos"			"10"
-		"zpos"			"5"
-		"wide"			"50"
-		"tall"			"12"
-		"autoResize"	"1"
-		"pinCorner"		"2"
-		"visible"		"1"
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"countImage0"
+		"xpos"			"c-30"
+		"ypos"			"340"
+		"zpos"			"9"
+		"wide"			"35"
+		"tall"			"70"
+		"visible"		"0"
 		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"%numScout%"
-		"textAlignment"	"center"
-		"font"			"MenuClassBuckets"
-		"fgcolor"		"TanLight"
-	}	
-	
-	"numSoldier" [$WIN32]
-	{
-		"ControlName"	"CTFLabel"
-		"fieldName"		"numSoldier"
-		"xpos"			"c-250"
-		"ypos"			"10"
-		"zpos"			"5"
-		"wide"			"50"
-		"tall"			"12"
-		"autoResize"	"1"
-		"pinCorner"		"2"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"%numSoldier%"
-		"textAlignment"	"center"
-		"font"			"MenuClassBuckets"
-		"fgcolor"		"TanLight"
-	}		
-	
-	"numPyro" [$WIN32]
-	{
-		"ControlName"	"CTFLabel"
-		"fieldName"		"numPyro"
-		"xpos"			"c-200"
-		"ypos"			"10"
-		"zpos"			"5"
-		"wide"			"50"
-		"tall"			"12"
-		"autoResize"	"1"
-		"pinCorner"		"2"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"%numPyro%"
-		"textAlignment"	"center"
-		"font"			"MenuClassBuckets"
-		"fgcolor"		"TanLight"
-	}			
-	
-	"numDemoman" [$WIN32]
-	{
-		"ControlName"	"CTFLabel"
-		"fieldName"		"numDemoman"
-		"xpos"			"c-110"
-		"ypos"			"10"
-		"zpos"			"5"
-		"wide"			"50"
-		"tall"			"12"
-		"autoResize"	"1"
-		"pinCorner"		"2"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"%numDemoman%"
-		"textAlignment"	"center"
-		"font"			"MenuClassBuckets"
-		"fgcolor"		"TanLight"
-	}				
-	
-	"numHeavy" [$WIN32]
-	{
-		"ControlName"	"CTFLabel"
-		"fieldName"		"numHeavy"
-		"xpos"			"c-60"
-		"ypos"			"10"
-		"zpos"			"5"
-		"wide"			"50"
-		"tall"			"12"
-		"autoResize"	"1"
-		"pinCorner"		"2"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"%numHeavy%"
-		"textAlignment"	"center"
-		"font"			"MenuClassBuckets"
-		"fgcolor"		"TanLight"
-	}					
-	
-	"numEngineer" [$WIN32]
-	{
-		"ControlName"	"CTFLabel"
-		"fieldName"		"numEngineer"
-		"xpos"			"c-10"
-		"ypos"			"10"
-		"zpos"			"5"
-		"wide"			"50"
-		"tall"			"12"
-		"autoResize"	"1"
-		"pinCorner"		"2"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"%numEngineer%"
-		"textAlignment"	"center"
-		"font"			"MenuClassBuckets"
-		"fgcolor"		"TanLight"
-	}						
-	
-	"numMedic" [$WIN32]
-	{
-		"ControlName"	"CTFLabel"
-		"fieldName"		"numMedic"
-		"xpos"			"c78"
-		"ypos"			"10"
-		"zpos"			"5"
-		"wide"			"50"
-		"tall"			"12"
-		"autoResize"	"1"
-		"pinCorner"		"2"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"%numMedic%"
-		"textAlignment"	"center"
-		"font"			"MenuClassBuckets"
-		"fgcolor"		"TanLight"
+		"image"			""	
+		"scaleImage"	"1"	
 	}							
 	
-	"numSniper" [$WIN32]
+	"countImage1" [$WIN32]
 	{
-		"ControlName"	"CTFLabel"
-		"fieldName"		"numSniper"
-		"xpos"			"c128"
-		"ypos"			"10"
-		"zpos"			"5"
-		"wide"			"50"
-		"tall"			"12"
-		"autoResize"	"1"
-		"pinCorner"		"2"
-		"visible"		"1"
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"countImage1"
+		"xpos"			"c0"
+		"ypos"			"340"
+		"zpos"			"9"
+		"wide"			"35"
+		"tall"			"70"
+		"visible"		"0"
 		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"%numSniper%"
-		"textAlignment"	"center"
-		"font"			"MenuClassBuckets"
-		"fgcolor"		"TanLight"
-	}						
+		"image"			""	
+		"scaleImage"	"1"	
+	}
 	
-	"numSpy" [$WIN32]
+	"countImage2" [$WIN32]
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"countImage2"
+		"xpos"			"c30"
+		"ypos"			"340"
+		"zpos"			"9"
+		"wide"			"35"
+		"tall"			"70"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			""	
+		"scaleImage"	"1"	
+	}
+	
+	"countImage3" [$WIN32]
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"countImage3"
+		"xpos"			"c60"
+		"ypos"			"340"
+		"zpos"			"9"
+		"wide"			"35"
+		"tall"			"70"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			""	
+		"scaleImage"	"1"	
+	}
+	
+	"countImage4" [$WIN32]
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"countImage4"
+		"xpos"			"c90"
+		"ypos"			"340"
+		"zpos"			"9"
+		"wide"			"35"
+		"tall"			"70"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			""	
+		"scaleImage"	"1"	
+	}
+	
+	"countImage5" [$WIN32]
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"countImage5"
+		"xpos"			"c120"
+		"ypos"			"340"
+		"zpos"			"9"
+		"wide"			"35"
+		"tall"			"70"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			""	
+		"scaleImage"	"1"	
+	}
+	
+	"countImage6" [$WIN32]
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"countImage6"
+		"xpos"			"c150"
+		"ypos"			"340"
+		"zpos"			"9"
+		"wide"			"35"
+		"tall"			"70"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			""	
+		"scaleImage"	"1"	
+	}
+	
+	"countImage7" [$WIN32]
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"countImage7"
+		"xpos"			"c180"
+		"ypos"			"340"
+		"zpos"			"9"
+		"wide"			"35"
+		"tall"			"70"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			""	
+		"scaleImage"	"1"	
+	}
+	
+	"countImage8" [$WIN32]
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"countImage8"
+		"xpos"			"c210"
+		"ypos"			"340"
+		"zpos"			"9"
+		"wide"			"35"
+		"tall"			"70"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			""	
+		"scaleImage"	"1"	
+	}
+	
+	"countImage9" [$WIN32]
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"countImage9"
+		"xpos"			"c240"
+		"ypos"			"340"
+		"zpos"			"9"
+		"wide"			"35"
+		"tall"			"70"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			""	
+		"scaleImage"	"1"	
+	}
+	
+	"countImage10" [$WIN32]
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"countImage10"
+		"xpos"			"c270"
+		"ypos"			"340"
+		"zpos"			"9"
+		"wide"			"35"
+		"tall"			"70"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			""	
+		"scaleImage"	"1"	
+	}
+	
+	"CountLabel" [$WIN32]
 	{
 		"ControlName"	"CTFLabel"
-		"fieldName"		"numSpy"
-		"xpos"			"c178"
-		"ypos"			"10"
-		"zpos"			"5"
-		"wide"			"50"
-		"tall"			"12"
+		"fieldName"		"CountLabel"
+		"xpos"			"c-30"
+		"ypos"			"402"
+		"zpos"			"10"
+		"wide"			"150"
+		"tall"			"18"
 		"autoResize"	"1"
 		"pinCorner"		"2"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
-		"labelText"		"%numSpy%"
-		"textAlignment"	"center"
-		"font"			"MenuClassBuckets"
+		"labelText"		"#TF_TeamCount"
+		"textAlignment"	"left"
+		"font"			"HudFontMediumSmallSecondary"
 		"fgcolor"		"TanLight"
-	}								
+	}	
 }

@@ -4,13 +4,15 @@
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"		"NemesisSubPanel"
-		"xpos"			"c46"
+		"xpos"			"c-44"
+		"xpos_lodef"		"c46"
 		"xpos_hidef"		"c109"
 		"ypos"			"223"
 		"ypos_hidef"		"223"
 		"ypos_lodef"		"193"
 		"zpos"			"4"
-		"wide"			"166"
+		"wide"			"306"	[$WIN32]
+		"wide"			"166"	[$X360]	
 		"tall"			"38"
 		"visible"		"1"
 
@@ -18,7 +20,8 @@
 		{
 			"ControlName"		"ImagePanel"
 			"fieldName"		"NemesisPanelBG"
-			"xpos"			"0"
+			"xpos"			"90"	[$WIN32]
+			"xpos"			"0"	[$X360]	
 			"ypos"			"0"
 			"zpos"			"5"
 			"wide"			"166"
@@ -32,7 +35,8 @@
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"NemesisIcon"
-			"xpos"			"5"
+			"xpos"			"95"	[$WIN32]
+			"xpos"			"5"	[$X360]	
 			"ypos"			"-1"
 			"zpos"			"6"
 			"wide"			"36"
@@ -47,7 +51,8 @@
 			"ControlName"		"Label"
 			"fieldName"		"NemesisLabel"
 			"font"			"HudFontMediumSmall"
-			"xpos"			"44"
+			"xpos"			"134"	[$WIN32]
+			"xpos"			"44"	[$X360]	
 			"ypos"			"10"
 			"ypos_hidef"		"11"
 			"ypos_lodef"		"13"

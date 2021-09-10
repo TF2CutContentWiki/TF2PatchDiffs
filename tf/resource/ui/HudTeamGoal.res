@@ -26,7 +26,8 @@
 		"xpos"			"80"
 		"ypos"			"20"
 		"zpos"			"1"
-		"wide"			"180"
+		"wide"			"220"	[$WIN32]
+		"wide"			"180"	[$X360]
 		"tall"			"15"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -44,7 +45,7 @@
 		"xpos"			"80"
 		"ypos"			"35"
 		"zpos"			"1"
-		"wide"			"180"
+		"wide"			"220"
 		"wide_hidef"	"200"
 		"wide_lodef"		"230"
 		"tall"			"55"
