@@ -17,7 +17,9 @@
 		"visible" "1"
 		"enabled" "1"
 		"xpos"	"r99"	[$WIN32]
+		"xpos_minmode"	"r85"	[$WIN32]
 		"ypos"	"r55"	[$WIN32]
+		"ypos_minmode"	"r36"	[$WIN32]
 		"xpos"	"r131"	[$X360]
 		"ypos"	"r77"	[$X360]
 		"wide"	"90"
@@ -41,7 +43,9 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"r162"	[$WIN32]
+		"xpos_minmode"	"r125"	[$WIN32]
 		"ypos"			"r52"	[$WIN32]
+		"ypos_minmode"	"r28"	[$WIN32]
 		"xpos"			"r194"	[$X360]
 		"ypos"			"r74"	[$X360]
 		"wide"			"100"
@@ -56,7 +60,9 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"r138"	[$WIN32]
+		"xpos_minmode"	"r100"	[$WIN32]
 		"ypos"			"r69"	[$WIN32]
+		"ypos_minmode"	"r34"	[$WIN32]
 		"xpos"			"r174"	[$X360]
 		"ypos"			"r90"	[$X360]
 		"wide"			"200"
@@ -69,11 +75,14 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"r80"	[$WIN32]
+		"xpos_minmode"	"r52"	[$WIN32]
 		"ypos"			"r21"	[$WIN32]
+		"ypos_minmode"	"r40"	[$WIN32]
 		"xpos"			"r112"	[$X360]
 		"ypos"			"r45"	[$X360]
 		"zpos"			"1"			// draw in front of ammo
 		"wide"			"60"
+		"wide_minmode"	"50"
 		"tall"			"8"
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
@@ -98,7 +107,8 @@
 		"PlusStyleExpandSelected"	"0.3"
 		"LargeBoxWide" "100"
 		"LargeBoxTall" "70"
-		"BoxGap" "4"
+		"BoxGap" "10"	[$WIN32]
+		"BoxGap" "4"	[$X360]
 		"SelectionNumberXPos" "12"
 		"SelectionNumberYPos" "4"
 		"IconXPos" "8"
@@ -122,6 +132,7 @@
 		"fieldName"				"HudAccount"
 		"xpos"					"r162"	[$WIN32]
 		"ypos"					"r152"	[$WIN32]
+		"ypos_minmode"			"r134"	[$WIN32]
 		"xpos"					"r194"	[$X360]
 		"ypos"					"r174"	[$X360]
 		"wide"					"116"
@@ -154,6 +165,7 @@
 		"ypos"		"250"
 		"wide"	 	"252"
 		"tall"	 	"50"
+		"tall_minmode"	 	"31"
 		"priority"	"40"
 		"priority_lodef"	"5"
 	}
@@ -167,6 +179,7 @@
 		"ypos"		"250"
 		"wide"	 	"252"
 		"tall"	 	"50"
+		"tall_minmode"	 	"31"
 		"priority"	"40"
 		"priority_lodef" "35"
 	}
@@ -180,6 +193,7 @@
 		"ypos"		"300"
 		"wide"	 	"252"
 		"tall"	 	"50"
+		"tall_minmode"	 	"31"
 		"priority"	"35"
 	}
 	
@@ -797,10 +811,12 @@
 		"visible" 		"1"
 		"enabled" 		"1"
 		"xpos"			"c-235"
-		"ypos"			"c-42"
+		"ypos"			"c-52"
+		"ypos_hidef"	"c-42"
 		"ypos_lodef"	"c-42"
 		"wide"			"470"
-		"tall"			"180"
+		"tall"			"200"	[$WIN32]
+		"tall"			"180"	[$X360]
 		"PaintBackgroundType"	"0"
 	}	
 	
@@ -810,7 +826,9 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"r162"	[$WIN32]
+		"xpos_minmode"	"r110"	[$WIN32]
 		"ypos"			"r52"	[$WIN32]
+		"ypos_minmode"	"r30"	[$WIN32]
 		"xpos"			"r194"	[$X360]
 		"ypos"			"r74"	[$X360]
 		"wide"			"100"

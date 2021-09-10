@@ -4,13 +4,14 @@
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"			"ObjectiveStatusTimePanel"
-		"xpos"				"c-50"
+		"xpos"				"c-55"
 		"xpos_hidef"		"c-150"
 		"xpos_lodef"		"c-150"
 		"ypos"				"0"	[$WIN32]
+		"ypos_minmode"		"-14"	[$WIN32]
 		"ypos"				"24"	[$X360]
 		"zpos"				"1"
-		"wide"				"100"
+		"wide"				"110"
 		"wide_hidef"		"300"
 		"wide_lodef"		"300"
 		"tall"				"150"
@@ -28,14 +29,17 @@
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TimePanelBG"
-		"xpos"			"11"
+		"xpos"			"16"
+		"xpos_minmode"	"35"
 		"xpos_hidef"	"108"
 		"xpos_lodef"	"108"
 		"ypos"			"9"
 		"zpos"			"2"
 		"wide"			"78"
+		"wide_minmode"	"38"
 		"wide_lodef"	"90"
 		"tall"			"33"
+		"tall_minmode"	"23"
 		"tall_lodef"	"38"
 		"visible"		"1"
 		"enabled"		"1"
@@ -49,16 +53,20 @@
 		"ControlName"		"CTFLabel"
 		"fieldName"		"TimePanelValue"
 		"font"			"HudFontMediumSmall"
+		"font_minmode"	"HudFontSmall"
 		"font_lodef"	"HudFontMedium"
 		"fgcolor"		"TanLight"
-		"xpos"			"18"
+		"xpos"			"23"
+		"xpos_minmode"	"39"
 		"xpos_hidef"	"114"
 		"xpos_lodef"	"114"
 		"ypos"			"11"
+		"ypos_minmode"	"6"
 		"ypos_hidef"	"15"
 		"ypos_lodef"	"18"
 		"zpos"			"3"
 		"wide"			"45"
+		"wide_minmode"	"30"
 		"wide_lodef"	"50"
 		"tall"			"31"
 		"visible"		"1"
@@ -69,7 +77,7 @@
 	{
 		"ControlName"			"CTFProgressBar"
 		"fieldName"			"TimePanelProgressBar"
-		"xpos"				"62"
+		"xpos"				"67"
 		"xpos_hidef"		"159"
 		"xpos_lodef"		"165"
 		"ypos"				"16"
@@ -81,6 +89,7 @@
 		"tall"				"20"
 		"tall_lodef"		"25"	
 		"visible"			"1"
+		"visible_minmode"	"0"
 		"enabled"			"1"
 		"scaleImage"			"1"
 		"image"				"../hud/objectives_timepanel_progressbar"
@@ -93,10 +102,11 @@
 	{
 		"ControlName"		"CTFLabel"
 		"fieldName"		"WaitingForPlayersLabel"
-		"xpos"			"11"
+		"xpos"			"16"
 		"xpos_hidef"	"0"
 		"xpos_lodef"	"0"
 		"ypos"			"34"
+		"ypos_minmode"	"24"
 		"ypos_hidef"	"41"
 		"ypos_lodef"	"41"
 		"zpos"			"5"
@@ -121,13 +131,15 @@
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"WaitingForPlayersBG"
-		"xpos"			"11"
+		"xpos"			"16"	[$WIN32]
+		"xpos"			"11"	[$X360]
 		"ypos"			"31"
 		"ypos_hidef"	"-100"	//off-screen
 		"ypos_lodef"	"-100"	//off-screen
 		"zpos"			"1"
 		"wide"			"78"
 		"tall"			"20"
+		"tall_minmode"	"0"
 		"visible"		"0"
 		"enabled"		"1"
 		"image"			"../hud/objectives_timepanel_suddendeath"	
@@ -137,10 +149,11 @@
 	{
 		"ControlName"		"CTFLabel"
 		"fieldName"		"OvertimeLabel"
-		"xpos"			"11"
+		"xpos"			"16"
 		"xpos_hidef"	"0"
 		"xpos_lodef"	"0"
 		"ypos"			"33"
+		"ypos_minmode"	"24"
 		"ypos_hidef"	"41"
 		"ypos_lodef"	"41"
 		"zpos"			"5"
@@ -157,7 +170,7 @@
 		"dulltext"		"0"
 		"brighttext"		"0"
 		"wrap"			"0"
-		"font"			"HudFontSmallest"
+		"font"			"ClockSubText"
 		"font_hidef"	"HudFontSmall"
 		"font_lodef"	"HudFontSmall"
 	}			
@@ -165,13 +178,15 @@
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"OvertimeBG"
-		"xpos"			"11"
+		"xpos"			"16"	[$WIN32]
+		"xpos"			"11"	[$X360]
 		"ypos"			"31"
 		"ypos_hidef"	"-100"	//off-screen
 		"ypos_lodef"	"-100"	//off-screen
 		"zpos"			"1"
 		"wide"			"78"
 		"tall"			"20"
+		"tall_minmode"	"0"
 		"visible"		"0"
 		"enabled"		"1"
 		"image"			"../hud/objectives_timepanel_suddendeath"	
@@ -181,10 +196,11 @@
 	{
 		"ControlName"		"CTFLabel"
 		"fieldName"		"SuddenDeathLabel"
-		"xpos"			"11"
+		"xpos"			"16"
 		"xpos_hidef"	"0"
 		"xpos_lodef"	"0"
 		"ypos"			"33"
+		"ypos_minmode"	"24"
 		"ypos_hidef"	"41"
 		"ypos_lodef"	"41"
 		"zpos"			"5"
@@ -209,13 +225,15 @@
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"SuddenDeathBG"
-		"xpos"			"11"
+		"xpos"			"16"	[$WIN32]
+		"xpos"			"11"	[$X360]
 		"ypos"			"31"
 		"ypos_hidef"	"-100"	//off-screen
 		"ypos_lodef"	"-100"	//off-screen
 		"zpos"			"1"
 		"wide"			"78"
 		"tall"			"20"
+		"tall_minmode"	"0"
 		"visible"		"0"
 		"enabled"		"1"
 		"image"			"../hud/objectives_timepanel_suddendeath"	
@@ -225,10 +243,11 @@
 	{
 		"ControlName"	"CTFLabel"
 		"fieldName"		"SetupLabel"
-		"xpos"			"11"
+		"xpos"			"16"
 		"xpos_hidef"	"0"
 		"xpos_lodef"	"0"
 		"ypos"			"33"
+		"ypos_minmode"	"24"
 		"ypos_hidef"	"41"
 		"ypos_lodef"	"41"
 		"zpos"			"5"
@@ -246,6 +265,7 @@
 		"brighttext"		"0"
 		"wrap"			"0"
 		"font"			"ClockSubText"
+		"font_minmode"	"ClockSubTextSuddenDeath"
 		"font_hidef"	"HudFontSmall"
 		"font_lodef"	"HudFontSmall"
 	}	
@@ -253,13 +273,15 @@
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"SetupBG"
-		"xpos"			"11"
+		"xpos"			"16"	[$WIN32]
+		"xpos"			"11"	[$X360]
 		"ypos"			"31"
 		"ypos_hidef"	"-100"	//off-screen
 		"ypos_lodef"	"-100"	//off-screen
 		"zpos"			"1"
 		"wide"			"78"
 		"tall"			"20"
+		"tall_minmode"	"0"
 		"visible"		"0"
 		"enabled"		"1"
 		"image"			"../hud/objectives_timepanel_suddendeath"	

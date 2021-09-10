@@ -26,8 +26,11 @@
 		"ControlName"		"Label"
 		"fieldName"		"TargetNameLabel"
 		"font"			"HudFontMediumSmallSecondary"
+		"font_minmode"	"TFFontLarge"
 		"xpos"			"34"
+		"xpos_minmode"	"30"
 		"ypos"			"10"
+		"ypos_minmode"	"7"
 		"zpos"			"1"
 		"wide"			"640"
 		"tall"			"24"
@@ -45,8 +48,11 @@
 		"ControlName"		"Label"
 		"fieldName"		"TargetDataLabel"
 		"font"			"TFFontMedium"
+		"font_minmode"	"DefaultVerySmall"
 		"xpos"			"34"
+		"xpos_minmode"	"30"
 		"ypos"			"24"	[$WIN32]
+		"ypos_minmode"	"12"	[$WIN32]
 		"ypos"			"22"	[$X360]
 		"ypos_hidef"		"25"	[$X360]
 		"zpos"			"1"
@@ -67,6 +73,7 @@
 		"fieldName"		"SpectatorGUIHealth"
 		"xpos"			"3"
 		"ypos"			"8"
+		"ypos_minmode"	"2"
 		"wide"			"32"
 		"tall"			"32"
 		"visible"		"1"

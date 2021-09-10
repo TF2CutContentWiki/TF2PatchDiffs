@@ -239,7 +239,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"labelText"		"#TF_AutoTeamSelect"
+		"labelText"		"#TF_Random"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
