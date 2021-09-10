@@ -239,6 +239,14 @@
 		"seconds_added"	"short"		// how many seconds were added to the round timer	
 	}
 
+	"teamplay_point_startcapture"
+	{
+		"cp"		"byte"			// index of the point that was captured
+		"cpname"	"string"		// name of the point
+		"team"		"byte"			// which team capped
+		"cappers"	"string"		// string where each character is a player index of someone that capped
+	}
+
 	"teamplay_point_captured"
 	{
 		"cp"		"byte"			// index of the point that was captured
