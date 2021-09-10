@@ -31,7 +31,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
-		"labelText"		"UBERCHARGE"
+		"labelText"		"#TF_Ubercharge"
 		"textAlignment"	"west"
 		"dulltext"		"0"
 		"brighttext"	"0"

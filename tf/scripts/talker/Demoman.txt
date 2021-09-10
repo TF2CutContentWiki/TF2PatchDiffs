@@ -2,6 +2,15 @@
 // Demoman Response Rule File
 //--------------------------------------------------------------------------------------------------------------
 
+Criterion "DemomanIsKillSpeechObject" "DemomanKillSpeechObject" "1" "required" weight 0
+Criterion "DemomanIsNotStillonFire" "DemomanOnFire" "!=1" "required" weight 0
+Criterion "DemomanIsStillonFire" "DemomanOnFire" "1" "required" weight 0
+Criterion "DemomanNotKillSpeech" "DemomanKillSpeech" "!=1" "required" weight 0
+Criterion "DemomanNotKillSpeechMelee" "DemomanKillSpeechMelee" "!=1" "required" weight 0
+Criterion "DemomanNotSaidHealThanks" "DemomanSaidHealThanks" "!=1" "required"
+Criterion "IsHelpCapDemoman" "DemomanHelpCap" "1" "required" weight 0
+
+
 Response PlayerCloakedSpyDemomanDemoman
 {
 	scene "scenes/Player/Demoman/low/CloakedSpyIdentify04.vcd" 
@@ -86,9 +95,6 @@ Rule PlayerCloakedSpySpyDemoman
 //--------------------------------------------------------------------------------------------------------------
 // Auto Speech
 //--------------------------------------------------------------------------------------------------------------
-
-Criterion "DemomanNotSaidHealThanks" "DemomanSaidHealThanks" "!=1" "required"
-
 Response HealThanksDemoman
 {
 	scene "scenes/Player/Demoman/low/ThanksForTheHeal01.vcd" 
@@ -190,9 +196,6 @@ Rule PlayerTeleporterThanksDemoman
 //--------------------------------------------------------------------------------------------------------------
 // Auto Speech Combat
 //--------------------------------------------------------------------------------------------------------------
-
-Criterion "DemomanNotKillSpeech" "DemomanKillSpeech" "!=1" "required" weight 0
-
 Response KilledPlayerManyDemoman
 {
 	scene "scenes/Player/Demoman/low/SpecialCompleted04.vcd" 
@@ -207,9 +210,6 @@ Rule KilledPlayerManyDemoman
 	applycontexttoworld
 	Response KilledPlayerManyDemoman
 }
-
-
-Criterion "DemomanNotKillSpeechMelee" "DemomanKillSpeechMelee" "!=1" "required" weight 0
 
 Response KilledPlayerMeleeDemoman
 {
@@ -296,9 +296,6 @@ Rule PlayerKilledForRevengeDemoman
 	Response PlayerKilledForRevengeDemoman
 }
 
-
-Criterion "DemomanIsKillSpeechObject" "DemomanKillSpeechObject" "1" "required" weight 0
-
 Response PlayerKilledObjectDemoman
 {
 	scene "scenes/Player/Demoman/low/SpecialCompleted11.vcd" 
@@ -329,9 +326,6 @@ Rule PlayerAttackerPainDemoman
 	Response PlayerAttackerPainDemoman
 }
 
-
-Criterion "DemomanIsNotStillonFire" "DemomanOnFire" "!=1" "required" weight 0
-
 Response PlayerOnFireDemoman
 {
 	scene "scenes/Player/Demoman/low/AutoOnFire01.vcd" 
@@ -343,9 +337,6 @@ Rule PlayerOnFireDemoman
 	ApplyContext "DemomanOnFire:1:7"
 	Response PlayerOnFireDemoman
 }
-
-
-Criterion "DemomanIsNotStillonFire" "DemomanOnFire" "!=1" "required" weight 0
 
 Response PlayerOnFireRareDemoman
 {
@@ -373,9 +364,6 @@ Rule PlayerPainDemoman
 	criteria ConceptPain IsDemoman
 	Response PlayerPainDemoman
 }
-
-
-Criterion "DemomanIsStillonFire" "DemomanOnFire" "1" "required" weight 0
 
 Response PlayerStillOnFireDemoman
 {
@@ -453,9 +441,6 @@ Rule PlayerHelpCaptureDemoman
 	Response PlayerHelpCaptureDemoman
 }
 
-
-Criterion "IsHelpCapDemoman" "DemomanHelpCap" "1" "required" weight 0
-
 Response PlayerHelpCapture2Demoman
 {
 	scene "scenes/Player/Demoman/low/StandOnThePoint01.vcd" 
@@ -513,6 +498,17 @@ Rule PlayerNoDemoman
 {
 	criteria ConceptPlayerNo  IsDemoman
 	Response PlayerNoDemoman
+}
+
+Response PlayerThanksDemoman
+{
+	scene "scenes/Player/Demoman/low/Thanks01.vcd" 
+	scene "scenes/Player/Demoman/low/Thanks02.vcd" 
+}
+Rule PlayerThanksDemoman
+{
+	criteria ConceptPlayerThanks IsDemoman
+	Response PlayerThanksDemoman
 }
 
 Response PlayerYesDemoman

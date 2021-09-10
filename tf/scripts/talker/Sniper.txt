@@ -2,6 +2,14 @@
 // Sniper Response Rule File
 //--------------------------------------------------------------------------------------------------------------
 
+Criterion "SniperIsNotStillonFire" "SniperOnFire" "!=1" "required" weight 0
+Criterion "SniperIsStillonFire" "SniperOnFire" "1" "required" weight 0
+Criterion "SniperNotKillSpeech" "SniperKillSpeech" "!=1" "required" weight 0
+Criterion "SniperNotKillSpeechMelee" "SniperKillSpeechMelee" "!=1" "required" weight 0
+Criterion "SniperNotSaidHealThanks" "SniperSaidHealThanks" "!=1" "required"
+Criterion "IsHelpCapSniper" "SniperHelpCap" "1" "required" weight 0
+
+
 Response PlayerCloakedSpyDemomanSniper
 {
 	scene "scenes/Player/Sniper/low/CloakedSpyIdentify05.vcd" 
@@ -117,9 +125,6 @@ Rule SniperHeadShotKillSpy
 //--------------------------------------------------------------------------------------------------------------
 // Auto Speech
 //--------------------------------------------------------------------------------------------------------------
-
-Criterion "SniperNotSaidHealThanks" "SniperSaidHealThanks" "!=1" "required"
-
 Response HealThanksSniper
 {
 	scene "scenes/Player/Sniper/low/ThanksForTheHeal01.vcd" 
@@ -219,9 +224,6 @@ Rule PlayerTeleporterThanksSniper
 //--------------------------------------------------------------------------------------------------------------
 // Auto Speech Combat
 //--------------------------------------------------------------------------------------------------------------
-
-Criterion "SniperNotKillSpeech" "SniperKillSpeech" "!=1" "required" weight 0
-
 Response KilledPlayerManySniper
 {
 	scene "scenes/Player/Sniper/low/SpecialCompleted04.vcd" 
@@ -235,9 +237,6 @@ Rule KilledPlayerManySniper
 	applycontexttoworld
 	Response KilledPlayerManySniper
 }
-
-
-Criterion "SniperNotKillSpeechMelee" "SniperKillSpeechMelee" "!=1" "required" weight 0
 
 Response KilledPlayerMeleeSniper
 {
@@ -353,9 +352,6 @@ Rule PlayerAttackerPainSniper
 	Response PlayerAttackerPainSniper
 }
 
-
-Criterion "SniperIsNotStillonFire" "SniperOnFire" "!=1" "required" weight 0
-
 Response PlayerOnFireSniper
 {
 	scene "scenes/Player/Sniper/low/AutoOnFire01.vcd" 
@@ -381,9 +377,6 @@ Rule PlayerPainSniper
 	criteria ConceptPain IsSniper
 	Response PlayerPainSniper
 }
-
-
-Criterion "SniperIsStillonFire" "SniperOnFire" "1" "required" weight 0
 
 Response PlayerStillOnFireSniper
 {
@@ -461,9 +454,6 @@ Rule PlayerHelpCaptureSniper
 	Response PlayerHelpCaptureSniper
 }
 
-
-Criterion "IsHelpCapSniper" "SniperHelpCap" "1" "required" weight 0
-
 Response PlayerHelpCapture2Sniper
 {
 	scene "scenes/Player/Sniper/low/StandOnThePoint01.vcd" 
@@ -520,6 +510,17 @@ Rule PlayerNoSniper
 {
 	criteria ConceptPlayerNo  IsSniper
 	Response PlayerNoSniper
+}
+
+Response PlayerThanksSniper
+{
+	scene "scenes/Player/Sniper/low/Thanks01.vcd" 
+	scene "scenes/Player/Sniper/low/Thanks02.vcd" 
+}
+Rule PlayerThanksSniper
+{
+	criteria ConceptPlayerThanks IsSniper
+	Response PlayerThanksSniper
 }
 
 Response PlayerYesSniper

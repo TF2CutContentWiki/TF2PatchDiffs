@@ -2,6 +2,15 @@
 // Soldier Response Rule File
 //--------------------------------------------------------------------------------------------------------------
 
+Criterion "SoldierIsKillSpeechObject" "SoldierKillSpeechObject" "1" "required" weight 0
+Criterion "SoldierIsNotStillonFire" "SoldierOnFire" "!=1" "required" weight 0
+Criterion "SoldierIsStillonFire" "SoldierOnFire" "1" "required" weight 0
+Criterion "SoldierNotKillSpeech" "SoldierKillSpeech" "!=1" "required" weight 0
+Criterion "SoldierNotKillSpeechMelee" "SoldierKillSpeechMelee" "!=1" "required" weight 0
+Criterion "SoldierNotSaidHealThanks" "SoldierSaidHealThanks" "!=1" "required"
+Criterion "IsHelpCapSoldier" "SoldierHelpCap" "1" "required" weight 0
+
+
 Response PlayerCloakedSpyDemomanSoldier
 {
 	scene "scenes/Player/Soldier/low/CloakedSpyIdentify05.vcd" 
@@ -86,9 +95,6 @@ Rule PlayerCloakedSpySpySoldier
 //--------------------------------------------------------------------------------------------------------------
 // Auto Speech
 //--------------------------------------------------------------------------------------------------------------
-
-Criterion "SoldierNotSaidHealThanks" "SoldierSaidHealThanks" "!=1" "required"
-
 Response HealThanksSoldier
 {
 	scene "scenes/Player/Soldier/low/ThanksForTheHeal01.vcd" 
@@ -190,9 +196,6 @@ Rule PlayerTeleporterThanksSoldier
 //--------------------------------------------------------------------------------------------------------------
 // Auto Speech Combat
 //--------------------------------------------------------------------------------------------------------------
-
-Criterion "SoldierNotKillSpeech" "SoldierKillSpeech" "!=1" "required" weight 0
-
 Response KilledPlayerManySoldier
 {
 	scene "scenes/Player/Soldier/low/SpecialCompleted03.vcd" 
@@ -208,9 +211,6 @@ Rule KilledPlayerManySoldier
 	applycontexttoworld
 	Response KilledPlayerManySoldier
 }
-
-
-Criterion "SoldierNotKillSpeechMelee" "SoldierKillSpeechMelee" "!=1" "required" weight 0
 
 Response KilledPlayerMeleeSoldier
 {
@@ -282,9 +282,6 @@ Rule PlayerKilledForRevengeSoldier
 	Response PlayerKilledForRevengeSoldier
 }
 
-
-Criterion "SoldierIsKillSpeechObject" "SoldierKillSpeechObject" "1" "required" weight 0
-
 Response PlayerKilledObjectSoldier
 {
 	scene "scenes/Player/Soldier/low/BattleCry01.vcd" 
@@ -320,9 +317,6 @@ Rule PlayerAttackerPainSoldier
 	Response PlayerAttackerPainSoldier
 }
 
-
-Criterion "SoldierIsNotStillonFire" "SoldierOnFire" "!=1" "required" weight 0
-
 Response PlayerOnFireSoldier
 {
 	scene "scenes/Player/Soldier/low/AutoOnFire01.vcd" 
@@ -333,9 +327,6 @@ Rule PlayerOnFireSoldier
 	ApplyContext "SoldierOnFire:1:7"
 	Response PlayerOnFireSoldier
 }
-
-
-Criterion "SoldierIsNotStillonFire" "SoldierOnFire" "!=1" "required" weight 0
 
 Response PlayerOnFireRareSoldier
 {
@@ -365,9 +356,6 @@ Rule PlayerPainSoldier
 	criteria ConceptPain IsSoldier
 	Response PlayerPainSoldier
 }
-
-
-Criterion "SoldierIsStillonFire" "SoldierOnFire" "1" "required" weight 0
 
 Response PlayerStillOnFireSoldier
 {
@@ -445,9 +433,6 @@ Rule PlayerHelpCaptureSoldier
 	Response PlayerHelpCaptureSoldier
 }
 
-
-Criterion "IsHelpCapSoldier" "SoldierHelpCap" "1" "required" weight 0
-
 Response PlayerHelpCapture2Soldier
 {
 	scene "scenes/Player/Soldier/low/StandOnThePoint01.vcd" 
@@ -507,6 +492,17 @@ Rule PlayerNoSoldier
 {
 	criteria ConceptPlayerNo  IsSoldier
 	Response PlayerNoSoldier
+}
+
+Response PlayerThanksSoldier
+{
+	scene "scenes/Player/Soldier/low/Thanks01.vcd" 
+	scene "scenes/Player/Soldier/low/Thanks02.vcd" 
+}
+Rule PlayerThanksSoldier
+{
+	criteria ConceptPlayerThanks IsSoldier
+	Response PlayerThanksSoldier
 }
 
 Response PlayerYesSoldier

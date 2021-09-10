@@ -2,6 +2,17 @@
 // Scout Response Rule File
 //--------------------------------------------------------------------------------------------------------------
 
+Criterion "ScoutIsKillSpeechObject" "ScoutKillSpeechObject" "1" "required" weight 0
+Criterion "ScoutIsNotStillonFire" "ScoutOnFire" "!=1" "required" weight 0
+Criterion "ScoutIsStillonFire" "ScoutOnFire" "1" "required" weight 0
+Criterion "ScoutNotKillSpeech" "ScoutKillSpeech" "!=1" "required" weight 0
+Criterion "ScoutNotKillSpeechMelee" "ScoutKillSpeechMelee" "!=1" "required" weight 0
+Criterion "ScoutNotKillSpeechMeleeFat" "ScoutKillSpeechMeleeFat" "!=1" "required" weight 0
+Criterion "ScoutNotSaidHealThanks" "ScoutSaidHealThanks" "!=1" "required"
+Criterion "IsHelpCapScout" "ScoutHelpCap" "1" "required" weight 0
+Criterion "NotScoutGrabbedIntelligence" "ScoutGrabbedIntelligence" "!=1" "required"
+
+
 Response PlayerCloakedSpyDemomanScout
 {
 	scene "scenes/Player/Scout/low/CloakedSpyIdentify05.vcd" 
@@ -86,9 +97,6 @@ Rule PlayerCloakedSpySpyScout
 //--------------------------------------------------------------------------------------------------------------
 // Auto Speech
 //--------------------------------------------------------------------------------------------------------------
-
-Criterion "ScoutNotSaidHealThanks" "ScoutSaidHealThanks" "!=1" "required"
-
 Response HealThanksScout
 {
 	scene "scenes/Player/Scout/low/ThanksForTheHeal01.vcd" 
@@ -141,9 +149,6 @@ Rule PlayerCapturedPointScout
 	criteria ConceptPlayerCapturedPoint IsScout
 	Response PlayerCapturedPointScout
 }
-
-
-Criterion "NotScoutGrabbedIntelligence" "ScoutGrabbedIntelligence" "!=1" "required"
 
 Response PlayerGrabbedIntelligenceScout
 {
@@ -205,9 +210,6 @@ Rule PlayerTeleporterThanksScout
 //--------------------------------------------------------------------------------------------------------------
 // Auto Speech Combat
 //--------------------------------------------------------------------------------------------------------------
-
-Criterion "ScoutNotKillSpeech" "ScoutKillSpeech" "!=1" "required" weight 0
-
 Response KilledPlayerManyScout
 {
 	scene "scenes/Player/Scout/low/Taunts04.vcd" 
@@ -219,9 +221,6 @@ Rule KilledPlayerManyScout
 	applycontexttoworld
 	Response KilledPlayerManyScout
 }
-
-
-Criterion "ScoutNotKillSpeechMelee" "ScoutKillSpeechMelee" "!=1" "required" weight 0
 
 Response KilledPlayerMeleeScout
 {
@@ -242,9 +241,6 @@ Rule KilledPlayerMeleeScout
 	applycontexttoworld
 	Response KilledPlayerMeleeScout
 }
-
-
-Criterion "ScoutNotKillSpeechMeleeFat" "ScoutKillSpeechMeleeFat" "!=1" "required" weight 0
 
 Response KilledPlayerMeleeScoutFatScout
 {
@@ -308,9 +304,6 @@ Rule PlayerKilledForRevengeScout
 	Response PlayerKilledForRevengeScout
 }
 
-
-Criterion "ScoutIsKillSpeechObject" "ScoutKillSpeechObject" "1" "required" weight 0
-
 Response PlayerKilledObjectScout
 {
 	scene "scenes/Player/Scout/low/SpecialCompleted10.vcd" 
@@ -342,9 +335,6 @@ Rule PlayerAttackerPainScout
 	Response PlayerAttackerPainScout
 }
 
-
-Criterion "ScoutIsNotStillonFire" "ScoutOnFire" "!=1" "required" weight 0
-
 Response PlayerOnFireScout
 {
 	scene "scenes/Player/Scout/low/AutoOnFire01.vcd" 
@@ -355,9 +345,6 @@ Rule PlayerOnFireScout
 	ApplyContext "ScoutOnFire:1:7"
 	Response PlayerOnFireScout
 }
-
-
-Criterion "ScoutIsNotStillonFire" "ScoutOnFire" "!=1" "required" weight 0
 
 Response PlayerOnFireRareScout
 {
@@ -386,9 +373,6 @@ Rule PlayerPainScout
 	criteria ConceptPain IsScout
 	Response PlayerPainScout
 }
-
-
-Criterion "ScoutIsStillonFire" "ScoutOnFire" "1" "required" weight 0
 
 Response PlayerStillOnFireScout
 {
@@ -468,9 +452,6 @@ Rule PlayerHelpCaptureScout
 	Response PlayerHelpCaptureScout
 }
 
-
-Criterion "IsHelpCapScout" "ScoutHelpCap" "1" "required" weight 0
-
 Response PlayerHelpCapture2Scout
 {
 	scene "scenes/Player/Scout/low/StandOnThePoint01.vcd" 
@@ -531,6 +512,17 @@ Rule PlayerNoScout
 {
 	criteria ConceptPlayerNo  IsScout
 	Response PlayerNoScout
+}
+
+Response PlayerThanksScout
+{
+	scene "scenes/Player/Scout/low/Thanks01.vcd" 
+	scene "scenes/Player/Scout/low/Thanks02.vcd" 
+}
+Rule PlayerThanksScout
+{
+	criteria ConceptPlayerThanks IsScout
+	Response PlayerThanksScout
 }
 
 Response PlayerYesScout

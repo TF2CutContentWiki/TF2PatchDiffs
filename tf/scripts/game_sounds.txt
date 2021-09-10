@@ -48,51 +48,6 @@
 //	SNDLVL_140dB	= 140,	// 0.2
 //	SNDLVL_150dB	= 150,	// 0.2
 
-"ambience/bell"
-{
-	"channel"		"CHAN_AUTO"
-	"volume"		"VOL_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"pitch"			"PITCH_NORM"
-	"wave"			"ambient/bell.wav"
-}
-
-"Player.Spawn"
-{
-	"channel"		"CHAN_BODY"
-	"volume"		"VOL_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"pitch"			"PITCH_NORM"
-	"wave"			"misc/null.wav"
-}
-
-"misc/teleport_in"
-{
-	"channel"		"CHAN_ITEM"
-	"volume"		"VOL_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"pitch"			"PITCH_NORM"
-	"wave"			"misc/teleport_in.wav"
-}
-
-"misc/teleport_out"
-{
-	"channel"		"CHAN_ITEM"
-	"volume"		"VOL_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"pitch"			"PITCH_NORM"
-	"wave"			"misc/teleport_out.wav"
-}
-
-"misc/teleport_ready"
-{
-	"channel"		"CHAN_ITEM"
-	"volume"		"VOL_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"pitch"			"PITCH_NORM"
-	"wave"			"misc/teleport_ready.wav"
-}
-
 "vox/null"
 {
 	"channel"		"CHAN_ITEM"
@@ -271,11 +226,21 @@
 "Hud.ProjectorScreenUp"
 {
 	"channel"	"CHAN_STATIC"
-	"volume"	"VOL_NORM"
+	"volume"	".65"
 	"soundlevel"  	"SNDLVL_NONE"
 	"pitch"		"PITCH_NORM"
 
 	"wave"		"ui/projector_screen_up.wav"
+}
+
+"Hud.ProjectorScreenUpLong"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+
+	"wave"		"ui/projector_screen_up_long.wav"
 }
 
 "Hud.ProjectorScreenDown"
@@ -554,13 +519,24 @@
 	"wave"		"ambient/lighthum.wav"
 }
 
+"Ambient.Siren"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ambient/siren.wav"
+}
+
 "Game.SuddenDeath"
 {
 	"channel"	"CHAN_AUTO"
 	"volume"	"1"
 	"soundlevel"	"SNDLVL_140dB"
 	"pitch"		"PITCH_NORM"
-	"wave"		"#misc/your_team_suddendeath.mp3"
+	
+	"wave"		"#misc/your_team_suddendeath.mp3"	[$WIN32]
+	"wave"		"#misc/your_team_suddendeath.wav"	[$X360]
 }
 
 "Game.Stalemate"
@@ -569,16 +545,24 @@
 	"volume"	"1"
 	"soundlevel"	"SNDLVL_140dB"
 	"pitch"		"PITCH_NORM"
-	"wave"		"#misc/your_team_stalemate.mp3"
+	
+	"wave"		"#misc/your_team_stalemate.mp3"	[$WIN32]
+	"wave"		"#misc/your_team_stalemate.wav"	[$X360]
 }
 
 "Game.Overtime"
 {
-	"channel"	"CHAN_AUTO"
+	"channel"	"CHAN_VOICE"
 	"volume"	"1"
 	"soundlevel"	"SNDLVL_140dB"
 	"pitch"		"PITCH_NORM"
-	"wave"		"vo/announcer_control_point_warning2.wav"
+	"rndwave"
+	{
+		"wave"	"vo/announcer_overtime.wav"
+		"wave"	"vo/announcer_overtime2.wav"
+		"wave"	"vo/announcer_overtime3.wav"
+		"wave"	"vo/announcer_overtime4.wav"
+	}
 }
 
 "Game.YourTeamLost"
@@ -588,7 +572,8 @@
 	"soundlevel"	"SNDLVL_140dB"
 	"pitch"		"PITCH_NORM"
 
-	"wave"		"#misc/your_team_lost.mp3"
+	"wave"		"#misc/your_team_lost.mp3"	[$WIN32]
+	"wave"		"#misc/your_team_lost.wav"	[$X360]
 }
 
 "Game.YourTeamWon"
@@ -598,7 +583,8 @@
 	"soundlevel"	"SNDLVL_140dB"
 	"pitch"		"PITCH_NORM"
 
-	"wave"		"#misc/your_team_won.mp3"
+	"wave"		"#misc/your_team_won.mp3"	[$WIN32]
+	"wave"		"#misc/your_team_won.wav"	[$X360]
 }
 
 
@@ -644,13 +630,60 @@
 // MISC
 // ------------------------------------------------------------------------------------ //
 
+"Door.Open"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		".65"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"		"doors/generic_door_open.wav"
+}
+
+"Door.Close"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		".65"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"		"doors/generic_door_close.wav"
+}
+
+"TV.Static"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		".15"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"		"misc/null.wav"
+}
+
+"TV.Tune"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"	[$WIN32]
+	{
+		"wave"	"ui/tv_tune.mp3"
+		"wave"	"ui/tv_tune2.mp3"
+		"wave"	"ui/tv_tune3.mp3"
+	}
+	
+	"rndwave"	[$X360]
+	{
+		"wave"	"ui/tv_tune.wav"
+		"wave"	"ui/tv_tune2.wav"
+		"wave"	"ui/tv_tune3.wav"
+	}
+}
 
 "Hologram.Start"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"		"100"
-	"soundlevel"  	"SNDLVL_65dB"
+	"soundlevel"  	"SNDLVL_73dB"
 	"wave"		"misc/hologram_start.wav"
 }
 
@@ -659,7 +692,7 @@
 	"channel"		"CHAN_ITEM"
 	"volume"		"1"
 	"pitch"		"100"
-	"soundlevel"  	"SNDLVL_65dB"
+	"soundlevel"  	"SNDLVL_73dB"
 	"wave"		"misc/hologram_move.wav"
 }
 
@@ -668,7 +701,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"		"100"
-	"soundlevel"  	"SNDLVL_65dB"
+	"soundlevel"  	"SNDLVL_73dB"
 	"wave"		"misc/hologram_stop.wav"
 }
 
@@ -677,8 +710,8 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"		"100"
-	"soundlevel"  	"SNDLVL_65dB"
-	"wave"		"misc/hologram_interrupt.wav"
+	"soundlevel"  	"SNDLVL_73dB"
+	"wave"		"misc/hologram_malfunction.wav"
 }
 
 

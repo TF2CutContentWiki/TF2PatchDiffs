@@ -17,12 +17,12 @@
 		"label" "#GameUI_GameMenu_PlayerList"
 		"command" "OpenPlayerListDialog"
 		"OnlyInGame" "1"
-	}
+	} 
 	"4"
 	{
-		"label" "#GameUI_GameMenu_FindServers"
+		"label" "#GameUI_GameMenu_FindServers" 
 		"command" "OpenServerBrowser"
-	}
+	} 
 	"5"
 	{
 		"label" "#GameUI_GameMenu_CreateServer"
@@ -31,7 +31,7 @@
 	"7"
 	{
 		"label"	"#GameUI_LoadCommentary"
-		"command" "OpenLoadCommentaryDialog"
+		"command" "OpenLoadSingleplayerCommentaryDialog"
 	}
 	"8"
 	{
@@ -40,8 +40,8 @@
 	}
 	"9"
 	{
-		"label" "#GameUI_GameMenu_Options"
-		"command" "OpenOptionsDialog"
+		"label" "#GameUI_GameMenu_Achievements"
+		"command" "OpenAchievementsDialog"
 	}
 	"10"
 	{
@@ -49,6 +49,17 @@
 		"command" "engine showstatsdlg"
 	}
 	"11"
+	{
+		"label" "#GameUI_Controller"
+		"command" "OpenControllerDialog"
+		"ConsoleOnly" "1"
+	}
+	"12"
+	{
+		"label" "#GameUI_GameMenu_Options"
+		"command" "OpenOptionsDialog"
+	}
+	"13"
 	{
 		"label" "#GameUI_GameMenu_Quit"
 		"command" "Quit"

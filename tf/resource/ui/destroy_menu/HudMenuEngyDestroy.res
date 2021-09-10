@@ -144,7 +144,7 @@
 	"inactive_item_1"
 	{
 		"ControlName"	"CEngyDestroyMenuItem"
-		"fieldName"		"active_item_1"
+		"fieldName"		"inactive_item_1"
 		"xpos"			"25"
 		"ypos"			"51"
 		"zpos"			"1"

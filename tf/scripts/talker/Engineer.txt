@@ -2,6 +2,14 @@
 // Engineer Response Rule File
 //--------------------------------------------------------------------------------------------------------------
 
+Criterion "EngineerIsNotStillonFire" "EngineerOnFire" "!=1" "required" weight 0
+Criterion "EngineerIsStillonFire" "EngineerOnFire" "1" "required" weight 0
+Criterion "EngineerNotKillSpeech" "EngineerKillSpeech" "!=1" "required" weight 0
+Criterion "EngineerNotKillSpeechMelee" "EngineerKillSpeechMelee" "!=1" "required" weight 0
+Criterion "EngineerNotSaidHealThanks" "EngineerSaidHealThanks" "!=1" "required"
+Criterion "IsHelpCapEngineer" "EngineerHelpCap" "1" "required" weight 0
+
+
 Response PlayerCloakedSpyDemomanEngineer
 {
 	scene "scenes/Player/Engineer/low/CloakedSpyIdentify05.vcd" 
@@ -117,9 +125,6 @@ Rule PlayerTeleporterDownEngineer
 //--------------------------------------------------------------------------------------------------------------
 // Auto Speech
 //--------------------------------------------------------------------------------------------------------------
-
-Criterion "EngineerNotSaidHealThanks" "EngineerSaidHealThanks" "!=1" "required"
-
 Response HealThanksEngineer
 {
 	scene "scenes/Player/Engineer/low/ThanksForTheHeal01.vcd" 
@@ -135,7 +140,6 @@ Rule HealThanksEngineer
 Response PlayerRoundStartEngineer
 {
 	scene "scenes/Player/Engineer/low/BattleCry01.vcd" predelay "1.0, 5.0"
-	scene "scenes/Player/Engineer/low/BattleCry02.vcd" predelay "1.0, 5.0"
 	scene "scenes/Player/Engineer/low/BattleCry03.vcd" predelay "1.0, 5.0"
 	scene "scenes/Player/Engineer/low/BattleCry04.vcd" predelay "1.0, 5.0"
 	scene "scenes/Player/Engineer/low/BattleCry05.vcd" predelay "1.0, 5.0"
@@ -212,9 +216,6 @@ Rule PlayerTeleporterThanksEngineer
 //--------------------------------------------------------------------------------------------------------------
 // Auto Speech Combat
 //--------------------------------------------------------------------------------------------------------------
-
-Criterion "EngineerNotKillSpeech" "EngineerKillSpeech" "!=1" "required" weight 0
-
 Response KillTauntsEngineerSpecial
 {
 	scene "scenes/Player/Engineer/low/SpecialCompleted02.vcd" 
@@ -230,9 +231,6 @@ Rule KillTauntsEngineerSpecial
 	Response KillTauntsEngineerSpecial
 }
 
-
-Criterion "EngineerNotKillSpeech" "EngineerKillSpeech" "!=1" "required" weight 0
-
 Response KilledPlayerManyEngineer
 {
 	scene "scenes/Player/Engineer/low/SpecialCompleted05.vcd" 
@@ -246,9 +244,6 @@ Rule KilledPlayerManyEngineer
 	applycontexttoworld
 	Response KilledPlayerManyEngineer
 }
-
-
-Criterion "EngineerNotKillSpeechMelee" "EngineerKillSpeechMelee" "!=1" "required" weight 0
 
 Response KilledPlayerMeleeEngineerEngineer
 {
@@ -422,9 +417,6 @@ Rule PlayerAttackerPainEngineer
 	Response PlayerAttackerPainEngineer
 }
 
-
-Criterion "EngineerIsNotStillonFire" "EngineerOnFire" "!=1" "required" weight 0
-
 Response PlayerOnFireEngineer
 {
 	scene "scenes/Player/Engineer/low/AutoOnFire01.vcd" 
@@ -454,9 +446,6 @@ Rule PlayerPainEngineer
 	criteria ConceptPain IsEngineer
 	Response PlayerPainEngineer
 }
-
-
-Criterion "EngineerIsStillonFire" "EngineerOnFire" "1" "required" weight 0
 
 Response PlayerStillOnFireEngineer
 {
@@ -533,9 +522,6 @@ Rule PlayerHelpCaptureEngineer
 	Response PlayerHelpCaptureEngineer
 }
 
-
-Criterion "IsHelpCapEngineer" "EngineerHelpCap" "1" "required" weight 0
-
 Response PlayerHelpCapture2Engineer
 {
 	scene "scenes/Player/Engineer/low/StandOnThePoint01.vcd" 
@@ -591,6 +577,16 @@ Rule PlayerNoEngineer
 {
 	criteria ConceptPlayerNo  IsEngineer
 	Response PlayerNoEngineer
+}
+
+Response PlayerThanksEngineer
+{
+	scene "scenes/Player/Engineer/low/Thanks01.vcd" 
+}
+Rule PlayerThanksEngineer
+{
+	criteria ConceptPlayerThanks IsEngineer
+	Response PlayerThanksEngineer
 }
 
 Response PlayerYesEngineer
@@ -694,7 +690,6 @@ Rule PlayerTeleporterHereEngineer
 Response PlayerBattleCryEngineer
 {
 	scene "scenes/Player/Engineer/low/BattleCry01.vcd" 
-	scene "scenes/Player/Engineer/low/BattleCry02.vcd" 
 	scene "scenes/Player/Engineer/low/BattleCry03.vcd" 
 	scene "scenes/Player/Engineer/low/BattleCry04.vcd" 
 	scene "scenes/Player/Engineer/low/BattleCry05.vcd" 

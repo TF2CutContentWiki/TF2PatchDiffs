@@ -2,6 +2,16 @@
 // Heavy Response Rule File
 //--------------------------------------------------------------------------------------------------------------
 
+Criterion "HeavyIsKillSpeechObject" "HeavyKillSpeechObject" "1" "required" weight 0
+Criterion "HeavyIsNotStillonFire" "HeavyOnFire" "!=1" "required" weight 0
+Criterion "HeavyIsStillonFire" "HeavyOnFire" "1" "required" weight 0
+Criterion "HeavyNotInvulnerableSpeech" "HeavyInvulnerableSpeech" "!=1" "required" weight 0
+Criterion "HeavyNotKillSpeech" "HeavyKillSpeech" "!=1" "required" weight 0
+Criterion "HeavyNotKillSpeechMelee" "HeavyKillSpeechMelee" "!=1" "required" weight 0
+Criterion "HeavyNotSaidHealThanks" "HeavySaidHealThanks" "!=1" "required"
+Criterion "IsHelpCapHeavy" "HeavyHelpCap" "1" "required" weight 0
+
+
 Response PlayerCloakedSpyDemomanHeavy
 {
 	scene "scenes/Player/Heavy/low/CloakedSpyIdentify05.vcd" 
@@ -86,9 +96,6 @@ Rule PlayerCloakedSpySpyHeavy
 //--------------------------------------------------------------------------------------------------------------
 // Auto Speech
 //--------------------------------------------------------------------------------------------------------------
-
-Criterion "HeavyNotSaidHealThanks" "HeavySaidHealThanks" "!=1" "required"
-
 Response HealThanksHeavy
 {
 	scene "scenes/Player/Heavy/low/ThanksForTheHeal01.vcd" 
@@ -187,9 +194,6 @@ Rule PlayerTeleporterThanksHeavy
 //--------------------------------------------------------------------------------------------------------------
 // Auto Speech Combat
 //--------------------------------------------------------------------------------------------------------------
-
-Criterion "HeavyNotInvulnerableSpeech" "HeavyInvulnerableSpeech" "!=1" "required" weight 0
-
 Response InvulnerableSpeechHeavy
 {
 	scene "scenes/Player/Heavy/low/SpecialCompleted04.vcd" 
@@ -204,9 +208,6 @@ Rule InvulnerableSpeechHeavy
 	ApplyContext "HeavyInvulnerableSpeech:1:30"
 	Response InvulnerableSpeechHeavy
 }
-
-
-Criterion "HeavyNotKillSpeech" "HeavyKillSpeech" "!=1" "required" weight 0
 
 Response KilledPlayerManyHeavy
 {
@@ -223,9 +224,6 @@ Rule KilledPlayerManyHeavy
 	applycontexttoworld
 	Response KilledPlayerManyHeavy
 }
-
-
-Criterion "HeavyNotKillSpeechMelee" "HeavyKillSpeechMelee" "!=1" "required" weight 0
 
 Response KilledPlayerMeleeHeavy
 {
@@ -309,9 +307,6 @@ Rule PlayerKilledForRevengeHeavy
 	Response PlayerKilledForRevengeHeavy
 }
 
-
-Criterion "HeavyIsKillSpeechObject" "HeavyKillSpeechObject" "1" "required" weight 0
-
 Response PlayerKilledObjectHeavy
 {
 	scene "scenes/Player/Heavy/low/SpecialCompleted01.vcd" 
@@ -342,9 +337,6 @@ Rule PlayerAttackerPainHeavy
 	Response PlayerAttackerPainHeavy
 }
 
-
-Criterion "HeavyIsNotStillonFire" "HeavyOnFire" "!=1" "required" weight 0
-
 Response PlayerOnFireHeavy
 {
 	scene "scenes/Player/Heavy/low/AutoOnFire01.vcd" 
@@ -357,9 +349,6 @@ Rule PlayerOnFireHeavy
 	ApplyContext "HeavyOnFire:1:7"
 	Response PlayerOnFireHeavy
 }
-
-
-Criterion "HeavyIsNotStillonFire" "HeavyOnFire" "!=1" "required" weight 0
 
 Response PlayerOnFireRareHeavy
 {
@@ -386,9 +375,6 @@ Rule PlayerPainHeavy
 	criteria ConceptPain IsHeavy
 	Response PlayerPainHeavy
 }
-
-
-Criterion "HeavyIsStillonFire" "HeavyOnFire" "1" "required" weight 0
 
 Response PlayerStillOnFireHeavy
 {
@@ -466,9 +452,6 @@ Rule PlayerHelpCaptureHeavy
 	Response PlayerHelpCaptureHeavy
 }
 
-
-Criterion "IsHelpCapHeavy" "HeavyHelpCap" "1" "required" weight 0
-
 Response PlayerHelpCapture2Heavy
 {
 	scene "scenes/Player/Heavy/low/StandOnThePoint01.vcd" 
@@ -528,6 +511,18 @@ Rule PlayerNoHeavy
 {
 	criteria ConceptPlayerNo  IsHeavy
 	Response PlayerNoHeavy
+}
+
+Response PlayerThanksHeavy
+{
+	scene "scenes/Player/Heavy/low/Thanks01.vcd" 
+	scene "scenes/Player/Heavy/low/Thanks02.vcd" 
+	scene "scenes/Player/Heavy/low/Thanks03.vcd" 
+}
+Rule PlayerThanksHeavy
+{
+	criteria ConceptPlayerThanks IsHeavy
+	Response PlayerThanksHeavy
 }
 
 Response PlayerYesHeavy

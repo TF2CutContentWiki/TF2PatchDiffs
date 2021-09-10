@@ -383,7 +383,23 @@
 				"width"		"96"
 				"height"	"32"
 		}
-		"d_shotgun_secondary"
+		"d_shotgun_soldier"
+		{
+				"file"	"HUD/d_images"		
+				"x"		"0"
+				"y"		"256"
+				"width"		"96"
+				"height"	"32"
+		}
+		"d_shotgun_hwg"
+		{
+				"file"	"HUD/d_images"		
+				"x"		"0"
+				"y"		"256"
+				"width"		"96"
+				"height"	"32"
+		}
+		"d_shotgun_pyro"
 		{
 				"file"	"HUD/d_images"		
 				"x"		"0"
@@ -656,7 +672,23 @@
 				"width"		"96"
 				"height"	"32"
 		}
-		"dneg_shotgun_secondary"
+		"dneg_shotgun_soldier"
+		{
+				"file"	"HUD/dneg_images"
+				"x"		"0"
+				"y"		"256"
+				"width"		"96"
+				"height"	"32"
+		}
+		"dneg_shotgun_hwg"
+		{
+				"file"	"HUD/dneg_images"
+				"x"		"0"
+				"y"		"256"
+				"width"		"96"
+				"height"	"32"
+		}
+		"dneg_shotgun_pyro"
 		{
 				"file"	"HUD/dneg_images"
 				"x"		"0"
@@ -827,7 +859,7 @@
 		"dneg_reddefend"
 		{
 				"file"	"HUD/dneg_images"
-				"x"		"224"
+				"x"		"226"
 				"y"		"0"
 				"width"		"32"
 				"height"	"32"
@@ -835,7 +867,7 @@
 		"dneg_redcapture"
 		{
 				"file"	"HUD/dneg_images"
-				"x"		"224"
+				"x"		"226"
 				"y"		"32"
 				"width"		"32"
 				"height"	"32"
@@ -1110,13 +1142,20 @@
 		
 		"hud_menu_item_bg_outline"
 		{
-			"file"		"hud/eng_build_item_outline"	
+			"file"		"hud/eng_sel_item_active"	
 			"x"		"1"
 			"y"		"1"
 			"width"		"14"
 			"height"	"15"
-		}	
-		
+		}
+		"hud_menu_item_bg_active"
+		{
+			"file"		"hud/eng_sel_item_active"	
+			"x"		"1"
+			"y"		"1"
+			"width"		"14"
+			"height"	"15"
+		}
 		"hud_menu_scout_red"
 		{
 			"file"		"vgui/class_sel_sm_scout_red"
@@ -1284,8 +1323,8 @@
 			"file"		"hud/eng_build_sentry_blueprint"
 			"x"			"0"
 			"y"			"0"
-			"width"		"256"
-			"height"	"256"
+			"width"		"128"
+			"height"	"128"
 		}
 		
 		"hud_menu_dispenser_build"
@@ -1293,8 +1332,8 @@
 			"file"		"hud/eng_build_dispenser_blueprint"
 			"x"			"0"
 			"y"			"0"
-			"width"		"256"
-			"height"	"256"
+			"width"		"128"
+			"height"	"128"
 		}
 		
 		"hud_menu_tele_entrance_build"
@@ -1302,8 +1341,8 @@
 			"file"		"hud/eng_build_tele_entrance_blueprint"
 			"x"			"0"
 			"y"			"0"
-			"width"		"256"
-			"height"	"256"
+			"width"		"128"
+			"height"	"128"
 		}
 		
 		"hud_menu_tele_exit_build"
@@ -1311,8 +1350,8 @@
 			"file"		"hud/eng_build_tele_exit_blueprint"
 			"x"			"0"
 			"y"			"0"
-			"width"		"256"
-			"height"	"256"
+			"width"		"128"
+			"height"	"128"
 		}
 		
 		"ico_metal"

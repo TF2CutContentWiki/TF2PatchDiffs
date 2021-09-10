@@ -147,6 +147,7 @@ enumeration "NPCState"
 }
 
 criterion "ConceptPlayerTaunt" "Concept" "TLK_PLAYER_TAUNT" "required"
+criterion "ConceptPlayerThanks" "Concept" "TLK_PLAYER_THANKS" "required"
 criterion "ConceptPlayerMedic" "Concept" "TLK_PLAYER_MEDIC" required
 criterion "ConceptPlayerHelp" "Concept" "TLK_PLAYER_HELP" required
 criterion "ConceptPlayerGo" "Concept"  "TLK_PLAYER_GO" required
@@ -191,6 +192,7 @@ criterion "ConceptLostObject" "Concept" "TLK_LOST_OBJECT" required
 criterion "ConceptKilledObject" "Concept" "TLK_KILLED_OBJECT" required
 criterion "ConceptMedicChargeReady" "Concept" "TLK_MEDIC_CHARGEREADY" required
 criterion "ConceptTeleported" "Concept" "TLK_TELEPORTED" required
+criterion "ConceptPlayerDead" "Concept" "TLK_DEAD" required
 
 criterion "ConceptPlayerGrabbedIntelligence" "Concept" "TLK_FLAGPICKUP" required          
 criterion "ConceptPlayerCapturedIntelligence" "Concept" "TLK_FLAGCAPTURED" required          
@@ -291,6 +293,12 @@ criterion "IsOnCappableControlPoint"  "OnCappableControlPoint"	"1"   required
 
 criterion "WeaponIsMinigun" "playerweapon" "tf_weapon_minigun" "required"
 criterion "WeaponIsShotgun" "playerweapon" "tf_weapon_shotgun_secondary" "required"
+criterion "WeaponIsShotgunSoldier" "playerweapon" "tf_weapon_shotgun_soldier" "required"
+criterion "WeaponIsShotgunHwg" "playerweapon" "tf_weapon_shotgun_hwg" "required"
+criterion "WeaponIsShotgunPyro" "playerweapon" "tf_weapon_shotgun_pyro" "required"
+
+
+
 criterion "WeaponIsFists" "playerweapon" "tf_weapon_fists" "required"
 criterion "WeaponIsFlamethrower" "playerweapon" "tf_weapon_flamethrower" "required"
 criterion "WeaponIsAxe" "playerweapon" "tf_weapon_fireaxe" "required"
@@ -327,7 +335,11 @@ criterion "ConceptWindMinigun" "Concept" "TLK_WINDMINIGUN" required
 criterion "LowHealthContext" "playerhealthfrac" "<0.25" required
 criterion "SuperHighHealthContext" "playerhealthfrac" ">1.400" required
 
-
+criterion "IsFiringMinigun" "minigunfiretime" ">0.0" required
+criterion "TimeFiringMinigunShort" "minigunfiretime" ">4.0,<=8.0" required
+criterion "TimeFiringMinigunLong" "minigunfiretime" ">8.0,<=15.0" required
+criterion "TimeFiringMinigunReallyLong" "minigunfiretime" ">15.0" required
+criterion "ConceptFireMinigunTalk" "Concept" "TLK_MINIGUN_FIREWEAPON" "required"
 
 // Test rules
 #include "talker/tf.txt"

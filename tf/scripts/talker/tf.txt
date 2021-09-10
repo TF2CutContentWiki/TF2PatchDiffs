@@ -1,14 +1,8 @@
 //============================================================================================================
-// TF criteria
+// TF criteria - moved to response_rules.txt file.  Please keep all definitions there.
 //============================================================================================================
-criterion "DeployedContext" "sniperzoomed" "1" "required"
-criterion "ConceptFireWeapon" "Concept" "TLK_FIREWEAPON" required
-criterion "ConceptFireMinigun" "Concept" "TLK_FIREMINIGUN" required
-criterion "ConceptWindMinigun" "Concept" "TLK_WINDMINIGUN" required
-criterion "LowHealthContext" "playerhealthfrac" "<0.25" required
-criterion "IsFiringMinigun" "minigunfiretime" ">0.0" required
 
-
+	
 //============================================================================================================
 // Taunts, idle expressions, firing expressions (not all chars have idle responses, depends on their 'default' face)
 //============================================================================================================
@@ -39,7 +33,7 @@ criterion "IsFiringMinigun" "minigunfiretime" ">0.0" required
 	}
 	rule PyroTauntPlayerSecondary
 	{
-		criteria ConceptPlayerTaunt IsPyro WeaponIsShotgun
+		criteria ConceptPlayerTaunt IsPyro WeaponIsShotgunPyro
 		response PyroTauntSecondary
 	}
 	rule PyroTauntPlayerMelee
@@ -80,7 +74,7 @@ criterion "IsFiringMinigun" "minigunfiretime" ">0.0" required
 	}
 	rule HeavyTauntPlayerSecondary
 	{
-		criteria ConceptPlayerTaunt IsHeavy WeaponIsShotgun
+		criteria ConceptPlayerTaunt IsHeavy WeaponIsShotgunHwg
 		response HeavyTauntSecondary
 	}
 	rule HeavyTauntPlayerMelee
@@ -107,6 +101,39 @@ criterion "IsFiringMinigun" "minigunfiretime" ">0.0" required
 	{
 		criteria ConceptPlayerExpression IsHeavy IsFiringMinigun
 		Response PlayerExpressionFiringMinigunHeavy
+	}
+	
+	Response HeavyTimeFiringMinigunShort
+	{
+		scene "scenes\player\heavy\low\attackMinigun_vocal02.vcd"
+		scene "scenes\player\heavy\low\attackMinigun_vocal03.vcd"
+	}
+	Rule HeavyTimeFiringMinigunShort
+	{
+		criteria ConceptFireMinigunTalk IsHeavy WeaponIsMinigun TimeFiringMinigunShort 30PercentChance
+		Response HeavyTimeFiringMinigunShort
+	}
+	
+	Response HeavyTimeFiringMinigunLong
+	{
+		scene "scenes\player\heavy\low\specialcompleted11.vcd"
+		scene "scenes\player\heavy\low\laughShort03.vcd"
+	}
+	Rule HeavyTimeFiringMinigunLong
+	{
+		criteria ConceptFireMinigunTalk IsHeavy WeaponIsMinigun TimeFiringMinigunLong 50PercentChance
+		Response HeavyTimeFiringMinigunLong
+	}
+	
+	Response HeavyTimeFiringMinigunReallyLong
+	{
+		scene "scenes\player\heavy\low\attackMinigun_vocal05.vcd"
+		scene "scenes\player\heavy\low\specialcompleted07.vcd"
+	}
+	Rule HeavyTimeFiringMinigunReallyLong
+	{
+		criteria ConceptFireMinigunTalk IsHeavy WeaponIsMinigun TimeFiringMinigunReallyLong 50PercentChance
+		Response HeavyTimeFiringMinigunReallyLong
 	}
 	
 	Response PlayerExpressionIdleHurtHeavy
@@ -316,7 +343,7 @@ criterion "IsFiringMinigun" "minigunfiretime" ">0.0" required
 	}
 	rule SoldierTauntPlayerSecondary
 	{
-		criteria ConceptPlayerTaunt IsSoldier WeaponIsShotgun
+		criteria ConceptPlayerTaunt IsSoldier WeaponIsShotgunSoldier
 		response SoldierTauntSecondary
 	}
 	rule SoldierTauntPlayerMelee

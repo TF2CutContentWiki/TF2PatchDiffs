@@ -86,12 +86,16 @@
 		"wide"	"f0"
 		"ypos" 	"0"
 		"tall"	"480"
-		"RightMargin" "0" [$WIN32]
-		"RightMargin" "32" [$X360]
+		"RightMargin" "0"
+		"RightMargin_hidef" "32"
+		"RightMargin_lodef" "38"
 		"visible" "1"
 		"enabled" "1"
 		"SmallBoxWide" "60"
 		"SmallBoxTall" "45"
+		"PlusStyleBoxWide" "90"
+		"PlusStyleBoxTall" "63"
+		"PlusStyleExpandSelected"	"0.3"
 		"LargeBoxWide" "100"
 		"LargeBoxTall" "70"
 		"BoxGap" "4"
@@ -132,22 +136,41 @@
 		"fieldName" "DisguiseStatus"
 		"visible"	"1"
 		"enabled"	"1"
-		"xpos"		"10"
-		"ypos"		"380"
+		"xpos"		"10"	[$WIN32]
+		"ypos"		"380"	[$WIN32]
+		"xpos"		"50"	[$X360]
+		"ypos"		"350"	[$X360]
 		"wide"		"640"
 		"tall"		"40"
+		"TextFont"	"Default"	[$X360]
 	}
 
-	CTargetID
+	CMainTargetID
 	{
-		"fieldName" 	"CTargetID"
+		"fieldName" 	"CMainTargetID"
 		"visible" 	"0"
 		"enabled" 	"1"
 		"xpos"		"c-126"
-		"ypos"		"260"
+		"ypos"		"250"
 		"wide"	 	"252"
-		"tall"	 	"40"
+		"tall"	 	"50"
+		"priority"	"40"
+		"priority_lodef"	"5"
 	}
+	
+	CSpectatorTargetID
+	{
+		"fieldName" 	"CSpectatorTargetID"
+		"visible" 	"0"
+		"enabled" 	"1"
+		"xpos"		"c-126"
+		"ypos"		"250"
+		"wide"	 	"252"
+		"tall"	 	"50"
+		"priority"	"40"
+		"priority_lodef" "35"
+	}
+	
 	CSecondaryTargetID
 	{
 		"fieldName" 	"CSecondaryTargetID"
@@ -156,7 +179,8 @@
 		"xpos"		"c-126"
 		"ypos"		"300"
 		"wide"	 	"252"
-		"tall"	 	"40"
+		"tall"	 	"50"
+		"priority"	"35"
 	}
 	
 	BuildingStatus_Spy
@@ -179,10 +203,12 @@
 		"fieldName" "BuildingStatus_Engineer"
 		"visible"	"1"
 		"enabled"	"1"
-		"xpos"		"0"	[$WIN32]
-		"ypos"		"0"	[$WIN32]
-		"xpos"		"32"	[$X360]
-		"ypos"		"16"	[$X360]		
+		"xpos"		"0"
+		"xpos_hidef"		"32"
+		"xpos_lodef"		"40"
+		"ypos"		"0"
+		"ypos_hidef"		"16"
+		"ypos_lodef"		"25"
 		"wide"		"640"
 		"tall"		"480"
 		
@@ -265,13 +291,14 @@
 	{
 		"fieldName" "HudCommentary"
 		"xpos"	"c-190"
-		"ypos"	"350"
+		"ypos"	"320"
 		"wide"	"380"
-		"tall"  "40"
+		"tall"  "50"
 		"visible" "1"
 		"enabled" "1"
 		
 		"PaintBackgroundType"	"2"
+		"BackgroundOverrideColor" "0 0 0 128"
 		
 		"bar_xpos"		"50"
 		"bar_ypos"		"20"
@@ -287,6 +314,8 @@
 		"icon_ypos"		"0"		
 		"icon_width"	"40"
 		"icon_height"	"40"
+
+		"use_script_bgcolor"	"1"
 	}
 
 	HudZoom
@@ -318,7 +347,7 @@
 		"xpos"	 "r640"	[$WIN32]
 		"ypos"	 "12"	[$WIN32]
 		"xpos"	 "r672"	[$X360]
-		"ypos"	 "26"	[$X360]
+		"ypos"	 "35"	[$X360]
 		"wide"	 "628"
 		"tall"	 "468"
 
@@ -334,6 +363,11 @@
 		"TeamBlue"		"HUDBlueTeamSolid"
 		"TeamRed"		"HUDRedTeamSolid"
 		"IconColor"		"HudWhite"
+
+		"BaseBackgroundColor"	"46 43 42 220"		[$WIN32]
+		"LocalBackgroundColor"	"245 229 196 200"	[$WIN32]
+		"BaseBackgroundColor"	"32 32 32 255"		[$X360]
+		"LocalBackgroundColor"	"0 0 0 255"		[$X360]
 	}
 
 	HudVehicle
@@ -408,17 +442,29 @@
 	HudCloseCaption
 	{
 		"fieldName" "HudCloseCaption"
-		"visible" "1"
-		"enabled" "1"
-		"wide"	 "640"
-		"tall"	 "480"
+		"visible"	"1"
+		"enabled"	"1"
+		"xpos"		"c-250"
+		"ypos"		"276"	[$WIN32]
+		"ypos"		"236"	[$X360]
+		"wide"		"500"
+		"tall"		"136"	[$WIN32]
+		"tall"		"176"	[$X360]
+
+		"BgAlpha"	"128"
+
+		"GrowTime"		"0.25"
+		"ItemHiddenTime"	"0.2"  // Nearly same as grow time so that the item doesn't start to show until growth is finished
+		"ItemFadeInTime"	"0.15"	// Once ItemHiddenTime is finished, takes this much longer to fade in
+		"ItemFadeOutTime"	"0.3"
+		"topoffset"		"0"
 	}
 
 	HudHistoryResource 
 	{
 		"fieldName" "HudHistoryResource"
-		"visible" "1"
-		"enabled" "1"
+		"visible" "0"
+		"enabled" "0"
 		"xpos"	 "r640"	[$WIN32]
 		"xpos"	 "r672"	[$X360]
 		"wide"	 "640"
@@ -524,8 +570,10 @@
 		"fieldName" "HudVoiceSelfStatus"
 		"visible" "1"
 		"enabled" "1"
-		"xpos" "r42"
-		"ypos" "355"
+		"xpos" "r42" 	[$WIN32]
+		"ypos" "355"	[$WIN32]
+		"xpos" "r75"	[$X360]
+		"ypos" "375"	[$X360]
 		"wide" "32"
 		"tall" "32"
 	}
@@ -535,8 +583,10 @@
 		"fieldName" "HudVoiceStatus"
 		"visible" "1"
 		"enabled" "1"
-		"xpos" "r130"
-		"ypos" "0"
+		"xpos" "r130" [$WIN32]
+		"ypos" "0" [$WIN32]
+		"xpos" "r195" [$X360]
+		"ypos" "0" [$X360]
 		"wide" "150"
 		"tall" "400"
 
@@ -661,9 +711,13 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"xpos"					"c-133"
-		"ypos"					"312"
+		"xpos_lodef"			"c-190"
+		"ypos"				"270"
+		"ypos_lodef"			"250"
 		"wide"					"266"
-		"tall"					"86"
+		"wide_lodef"			"400"
+		"tall"					"120"
+		"tall_lodef"			"190"
 	}
 	
 	FreezePanel
@@ -673,7 +727,7 @@
 		"enabled"				"1"
 		"xpos"					"0"
 		"ypos"					"0"
-		"wide"					"640"
+		"wide"					"f0"
 		"tall"					"480"
 	}
 
@@ -719,9 +773,9 @@
 		"visible" 		"1"
 		"enabled" 		"1"
 		"xpos"			"c-225"
-		"ypos"			"c-10"
+		"ypos"			"c-55"
 		"wide"			"450"
-		"tall"			"185"
+		"tall"			"195"
 		"PaintBackgroundType"	"0"
 	}
 	
@@ -731,7 +785,7 @@
 		"visible" 		"1"
 		"enabled" 		"1"
 		"xpos"			"c-225"
-		"ypos"			"c-14"
+		"ypos"			"c-59"
 		"wide"			"450"
 		"tall"			"200"
 		"PaintBackgroundType"	"0"
@@ -743,7 +797,8 @@
 		"visible" 		"1"
 		"enabled" 		"1"
 		"xpos"			"c-235"
-		"ypos"			"c0"
+		"ypos"			"c-42"
+		"ypos_lodef"	"c-42"
 		"wide"			"470"
 		"tall"			"180"
 		"PaintBackgroundType"	"0"
@@ -768,7 +823,33 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"xpos"					"c-160"
-		"ypos"					"235"
+		"ypos"					"65"
+		"ypos_lodef"			"75"
+		"wide"					"320"
+		"tall"					"100"
+	}
+
+	HudTeamSwitch
+	{
+		"fieldName"				"HudTeamSwitch"
+		"visible"				"0"
+		"enabled"				"1"
+		"xpos"					"c-160"
+		"ypos"					"75"
+		"ypos_hidef"				"90"
+		"ypos_lodef"			"90"
+		"wide"					"320"
+		"tall"					"100"
+	}
+
+	HudStalemate
+	{
+		"fieldName"				"HudStalemate"
+		"visible"				"0"
+		"enabled"				"1"
+		"xpos"					"c-160"
+		"ypos"					"65"
+		"ypos_lodef"			"75"
 		"wide"					"320"
 		"tall"					"100"
 	}
@@ -781,6 +862,18 @@
 		"xpos"					"c-320"
 		"ypos"					"300"
 		"wide"					"640"
+		"tall"					"100"
+	}
+
+	AchievementNotificationPanel	
+	{
+		"fieldName"				"AchievementNotificationPanel"
+		"visible"				"1"
+		"enabled"				"1"
+		"xpos"					"0"
+		"ypos"					"180"
+		"wide"					"f10"	[$WIN32]
+		"wide"					"f60"	[$X360]
 		"tall"					"100"
 	}
 }

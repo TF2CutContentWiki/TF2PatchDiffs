@@ -154,8 +154,7 @@
 
 "Weapon_Bat.DrawSwoosh2"
 {
-	"channel"	"CHAN_STATIC
-"
+	"channel"	"CHAN_STATIC"
 	"soundlevel"	"SNDLVL_NORM"
 	"volume"	".45"
 	"wave"		"weapons/bat_draw_swoosh2.wav"
@@ -726,7 +725,7 @@
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_74dB"
 	"volume"	".25"
-	"wave"		")weapons/flame_thrower_pilot.wav"
+	"wave"		"weapons/flame_thrower_pilot.wav"
 }
 
 "Weapon_FlameThrower.FireRocket"
@@ -2164,6 +2163,15 @@
 	"soundlevel"	"SNDLVL_74dB"
 	"wave"		"weapons/draw_sapper_switch.wav"
 }
+
+"Weapon_Sapper.Removed"
+{
+	"channel"	"CHAN_WEAPON"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_84dB"
+	"wave"		"weapons/sapper_removed.wav"
+}
+
 
 // ------------------------------------------------------------------------------------ //
 // ToolBox

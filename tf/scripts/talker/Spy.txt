@@ -2,6 +2,14 @@
 // Spy Response Rule File
 //--------------------------------------------------------------------------------------------------------------
 
+Criterion "SpyIsNotStillonFire" "SpyOnFire" "!=1" "required" weight 0
+Criterion "SpyIsStillonFire" "SpyOnFire" "1" "required" weight 0
+Criterion "SpyNotKillSpeech" "SpyKillSpeech" "!=1" "required" weight 0
+Criterion "SpyNotKillSpeechMelee" "SpyKillSpeechMelee" "!=1" "required" weight 0
+Criterion "SpyNotSaidHealThanks" "SpySaidHealThanks" "!=1" "required"
+Criterion "IsHelpCapSpy" "SpyHelpCap" "1" "required" weight 0
+
+
 Response PlayerCloakedSpyDemomanSpy
 {
 	scene "scenes/Player/Spy/low/CloakedSpyIdentify05.vcd" 
@@ -87,9 +95,6 @@ Rule PlayerCloakedSpySpySpy
 //--------------------------------------------------------------------------------------------------------------
 // Auto Speech
 //--------------------------------------------------------------------------------------------------------------
-
-Criterion "SpyNotSaidHealThanks" "SpySaidHealThanks" "!=1" "required"
-
 Response HealThanksSpy
 {
 	scene "scenes/Player/Spy/low/ThanksForTheHeal01.vcd" 
@@ -183,9 +188,6 @@ Rule PlayerTeleporterThanksSpy
 //--------------------------------------------------------------------------------------------------------------
 // Auto Speech Combat
 //--------------------------------------------------------------------------------------------------------------
-
-Criterion "SpyNotKillSpeech" "SpyKillSpeech" "!=1" "required" weight 0
-
 Response KilledPlayerManySpy
 {
 	scene "scenes/Player/Spy/low/SpecialCompleted09.vcd" 
@@ -197,9 +199,6 @@ Rule KilledPlayerManySpy
 	applycontexttoworld
 	Response KilledPlayerManySpy
 }
-
-
-Criterion "SpyNotKillSpeechMelee" "SpyKillSpeechMelee" "!=1" "required" weight 0
 
 Response KilledPlayerMeleeSpy
 {
@@ -281,9 +280,6 @@ Rule PlayerAttackerPainSpy
 	Response PlayerAttackerPainSpy
 }
 
-
-Criterion "SpyIsNotStillonFire" "SpyOnFire" "!=1" "required" weight 0
-
 Response PlayerOnFireSpy
 {
 	scene "scenes/Player/Spy/low/AutoOnFire02.vcd" 
@@ -294,9 +290,6 @@ Rule PlayerOnFireSpy
 	ApplyContext "SpyOnFire:1:7"
 	Response PlayerOnFireSpy
 }
-
-
-Criterion "SpyIsNotStillonFire" "SpyOnFire" "!=1" "required" weight 0
 
 Response PlayerOnFireRareSpy
 {
@@ -322,9 +315,6 @@ Rule PlayerPainSpy
 	criteria ConceptPain IsSpy
 	Response PlayerPainSpy
 }
-
-
-Criterion "SpyIsStillonFire" "SpyOnFire" "1" "required" weight 0
 
 Response PlayerStillOnFireSpy
 {
@@ -402,9 +392,6 @@ Rule PlayerHelpCaptureSpy
 	Response PlayerHelpCaptureSpy
 }
 
-
-Criterion "IsHelpCapSpy" "SpyHelpCap" "1" "required" weight 0
-
 Response PlayerHelpCapture2Spy
 {
 	scene "scenes/Player/Spy/low/StandOnThePoint01.vcd" 
@@ -463,6 +450,18 @@ Rule PlayerNoSpy
 {
 	criteria ConceptPlayerNo  IsSpy
 	Response PlayerNoSpy
+}
+
+Response PlayerThanksSpy
+{
+	scene "scenes/Player/Spy/low/Thanks01.vcd" 
+	scene "scenes/Player/Spy/low/Thanks02.vcd" 
+	scene "scenes/Player/Spy/low/Thanks03.vcd" 
+}
+Rule PlayerThanksSpy
+{
+	criteria ConceptPlayerThanks IsSpy
+	Response PlayerThanksSpy
 }
 
 Response PlayerYesSpy

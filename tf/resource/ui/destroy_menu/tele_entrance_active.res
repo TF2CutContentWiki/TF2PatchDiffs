@@ -15,6 +15,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"#TF_Object_Tele_Entrance"
+		"labelText_lodef"		"#TF_Object_Tele_Entrance_360"
 		"textAlignment"	"Left"
 		"dulltext"		"0"
 		"brighttext"	"0"

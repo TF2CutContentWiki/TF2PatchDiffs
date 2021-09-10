@@ -14,7 +14,9 @@
 		"image"			"../hud/misc_ammo_area_blue"
 		"scaleImage"	"1"	
 		"teambg_2"		"../hud/misc_ammo_area_red"
-		"teambg_3"		"../hud/misc_ammo_area_blue"				
+		"teambg_2_lodef"	"../hud/misc_ammo_area_red_lodef"
+		"teambg_3"		"../hud/misc_ammo_area_blue"
+		"teambg_3_lodef"	"../hud/misc_ammo_area_blue_lodef"				
 	}
 	
 	"PipesPresentPanel"
@@ -53,6 +55,7 @@
 			"zpos"			"2"
 			"wide"			"35"
 			"tall"			"20"
+			"tall_lodef"	"28"
 			"autoResize"	"1"
 			"pinCorner"		"2"
 			"visible"		"1"
@@ -63,6 +66,7 @@
 			"dulltext"		"0"
 			"brighttext"	"0"
 			"font"			"HudFontMedium"
+			"font_lodef"	"HudFontMediumBig"
 		}
 		"NumPipesLabelDropshadow"
 		{
@@ -73,6 +77,7 @@
 			"zpos"			"2"
 			"wide"			"35"
 			"tall"			"20"
+			"tall_lodef"	"28"
 			"autoResize"	"1"
 			"pinCorner"		"2"
 			"visible"		"1"
@@ -83,6 +88,7 @@
 			"dulltext"		"0"
 			"brighttext"	"0"
 			"font"			"HudFontMedium"
+			"font_lodef"	"HudFontMediumBig"
 			"fgcolor"		"black"
 		}		
 	}
@@ -123,6 +129,7 @@
 			"zpos"			"2"
 			"wide"			"35"
 			"tall"			"20"
+			"tall_lodef"	"28"
 			"autoResize"	"1"
 			"pinCorner"		"2"
 			"visible"		"1"
@@ -133,6 +140,7 @@
 			"dulltext"		"1"
 			"brighttext"	"0"
 			"font"			"HudFontMedium"
+			"font_lodef"	"HudFontMediumBig"
 		}
 		"NumPipesLabelDropshadow"
 		{
@@ -143,6 +151,7 @@
 			"zpos"			"2"
 			"wide"			"35"
 			"tall"			"20"
+			"tall_lodef"	"28"
 			"autoResize"	"1"
 			"pinCorner"		"2"
 			"visible"		"1"
@@ -153,6 +162,7 @@
 			"dulltext"		"1"
 			"brighttext"	"0"
 			"font"			"HudFontMedium"
+			"font_lodef"	"HudFontMediumBig"
 			"fgcolor"		"black"
 		}			
 	}				

@@ -2,6 +2,16 @@
 // Medic Response Rule File
 //--------------------------------------------------------------------------------------------------------------
 
+Criterion "MedicIsKillSpeechObject" "MedicKillSpeechObject" "1" "required" weight 0
+Criterion "MedicIsNotStillonFire" "MedicOnFire" "!=1" "required" weight 0
+Criterion "MedicIsStillonFire" "MedicOnFire" "1" "required" weight 0
+Criterion "MedicNotInvulnerableSpeech" "MedicInvulnerableSpeech" "!=1" "required" weight 0
+Criterion "MedicNotKillSpeech" "MedicKillSpeech" "!=1" "required" weight 0
+Criterion "MedicNotKillSpeechMelee" "MedicKillSpeechMelee" "!=1" "required" weight 0
+Criterion "MedicNotSaidHealThanks" "MedicSaidHealThanks" "!=1" "required"
+Criterion "IsHelpCapMedic" "MedicHelpCap" "1" "required" weight 0
+
+
 Response MedicChargeReady
 {
 	scene "scenes/Player/Medic/low/AutoChargeReady02.vcd" 
@@ -97,9 +107,6 @@ Rule PlayerCloakedSpySpyMedic
 //--------------------------------------------------------------------------------------------------------------
 // Auto Speech
 //--------------------------------------------------------------------------------------------------------------
-
-Criterion "MedicNotSaidHealThanks" "MedicSaidHealThanks" "!=1" "required"
-
 Response HealThanksMedic
 {
 	scene "scenes/Player/Medic/low/ThanksForTheHeal01.vcd" 
@@ -204,9 +211,6 @@ Rule PlayerTeleporterThanksMedic
 //--------------------------------------------------------------------------------------------------------------
 // Auto Speech Combat
 //--------------------------------------------------------------------------------------------------------------
-
-Criterion "MedicNotInvulnerableSpeech" "MedicInvulnerableSpeech" "!=1" "required" weight 0
-
 Response InvulnerableSpeechMedic
 {
 	scene "scenes/Player/Medic/low/SpecialCompleted04.vcd" 
@@ -220,9 +224,6 @@ Rule InvulnerableSpeechMedic
 	Response InvulnerableSpeechMedic
 }
 
-
-Criterion "MedicNotKillSpeech" "MedicKillSpeech" "!=1" "required" weight 0
-
 Response KilledPlayerManyMedic
 {
 	scene "scenes/Player/Medic/low/SpecialCompleted12.vcd" 
@@ -234,9 +235,6 @@ Rule KilledPlayerManyMedic
 	applycontexttoworld
 	Response KilledPlayerManyMedic
 }
-
-
-Criterion "MedicNotKillSpeechMelee" "MedicKillSpeechMelee" "!=1" "required" weight 0
 
 Response KilledPlayerMeleeMedic
 {
@@ -316,9 +314,6 @@ Rule PlayerKilledForRevengeMedic
 	Response PlayerKilledForRevengeMedic
 }
 
-
-Criterion "MedicIsKillSpeechObject" "MedicKillSpeechObject" "1" "required" weight 0
-
 Response PlayerKilledObjectMedic
 {
 	scene "scenes/Player/Medic/low/SpecialCompleted07.vcd" 
@@ -349,9 +344,6 @@ Rule PlayerAttackerPainMedic
 	Response PlayerAttackerPainMedic
 }
 
-
-Criterion "MedicIsNotStillonFire" "MedicOnFire" "!=1" "required" weight 0
-
 Response PlayerOnFireMedic
 {
 	scene "scenes/Player/Medic/low/AutoOnFire01.vcd" 
@@ -364,9 +356,6 @@ Rule PlayerOnFireMedic
 	ApplyContext "MedicOnFire:1:7"
 	Response PlayerOnFireMedic
 }
-
-
-Criterion "MedicIsNotStillonFire" "MedicOnFire" "!=1" "required" weight 0
 
 Response PlayerOnFireRareMedic
 {
@@ -396,9 +385,6 @@ Rule PlayerPainMedic
 	criteria ConceptPain IsMedic
 	Response PlayerPainMedic
 }
-
-
-Criterion "MedicIsStillonFire" "MedicOnFire" "1" "required" weight 0
 
 Response PlayerStillOnFireMedic
 {
@@ -477,9 +463,6 @@ Rule PlayerHelpCaptureMedic
 	Response PlayerHelpCaptureMedic
 }
 
-
-Criterion "IsHelpCapMedic" "MedicHelpCap" "1" "required" weight 0
-
 Response PlayerHelpCapture2Medic
 {
 	scene "scenes/Player/Medic/low/StandOnThePoint01.vcd" 
@@ -539,6 +522,17 @@ Rule PlayerNoMedic
 {
 	criteria ConceptPlayerNo  IsMedic
 	Response PlayerNoMedic
+}
+
+Response PlayerThanksMedic
+{
+	scene "scenes/Player/Medic/low/Thanks01.vcd" 
+	scene "scenes/Player/Medic/low/Thanks02.vcd" 
+}
+Rule PlayerThanksMedic
+{
+	criteria ConceptPlayerThanks IsMedic
+	Response PlayerThanksMedic
 }
 
 Response PlayerYesMedic

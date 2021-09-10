@@ -99,7 +99,7 @@
 		"brighttext"		"0"
 		"wrap"		"0"
 		"Command"		"Advanced"
-		"Default"		"1"
+		"Default"		"0"
 		"selected"		"0"
 	}
 	"ImportSprayImage"
@@ -107,7 +107,7 @@
 		"ControlName"		"Button"
 		"fieldName"		"ImportSprayImage"
 		"xpos"		"106"
-		"ypos"		"142"
+		"ypos"		"92"
 		"wide"		"124"
 		"tall"		"24"
 		"autoResize"		"0"
@@ -123,45 +123,6 @@
 		"Command"		"ImportSprayImage"
 		"Default"		"0"
 		"selected"		"0"
-	}
-	"NameLabel"
-	{
-		"ControlName"		"Label"
-		"fieldName"		"NameLabel"
-		"xpos"		"32"
-		"ypos"		"12"
-		"wide"		"150"
-		"tall"		"24"
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"		"0"
-		"labelText"		"#GameUI_PlayerName"
-		"textAlignment"		"west"
-		"associate"		"NameEntry"
-		"dulltext"		"0"
-		"brighttext"		"0"
-		"wrap"		"0"
-	}
-	"NameEntry"
-	{
-		"ControlName"		"CCvarTextEntry"
-		"fieldName"		"NameEntry"
-		"xpos"		"32"
-		"ypos"		"36"
-		"wide"		"198"
-		"tall"		"24"
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"		"1"
-		"textHidden"		"0"
-		"editable"		"1"
-		"maxchars"		"63"
-		"NumericInputOnly"		"0"
-		"unicode"		"1"
 	}
 	"Primary Color Slider"
 	{
@@ -240,7 +201,7 @@
 		"ControlName"		"CLabeledCommandComboBox"
 		"fieldName"		"SpraypaintList"
 		"xpos"		"106"
-		"ypos"		"102"
+		"ypos"		"52"
 		"wide"		"124"
 		"tall"		"24"
 		"autoResize"		"0"
@@ -273,7 +234,7 @@
 		"ControlName"		"ImagePanel"
 		"fieldName"		"LogoImage"
 		"xpos"		"32"
-		"ypos"		"102"
+		"ypos"		"52"
 		"wide"		"64"
 		"tall"		"64"
 		"autoResize"		"0"
@@ -283,6 +244,7 @@
 		"tabPosition"		"0"
 		"border"		"DepressedBorder"
 		"scaleImage"		"1"
+		"scaleAmount"		"0.000000"
 	}
 	"CrosshairColorComboBox"
 	{
@@ -359,6 +321,7 @@
 		"image"		"crosshair_bg"
 		"border"		"DepressedBorder"
 		"scaleImage"		"0"
+		"scaleAmount"		"0.000000"
 	}
 	"Red Color Slider"
 	{
@@ -459,6 +422,7 @@
 		"image"		"crosshair_bg"
 		"border"		"DepressedBorder"
 		"scaleImage"		"1"
+		"scaleAmount"		"0.000000"
 	}
 	"CrosshairLabel"
 	{
@@ -613,7 +577,7 @@
 		"ControlName"		"Label"
 		"fieldName"		"Label2"
 		"xpos"		"32"
-		"ypos"		"78"
+		"ypos"		"24"
 		"wide"		"150"
 		"tall"		"24"
 		"autoResize"		"0"
@@ -633,7 +597,7 @@
 		"ControlName"		"Label"
 		"fieldName"		"Label3"
 		"xpos"		"246"
-		"ypos"		"100"
+		"ypos"		"50"
 		"wide"		"204"
 		"tall"		"64"
 		"autoResize"		"0"
@@ -747,20 +711,6 @@
 		"font"		"defaultSmall"
 		"wrap"		"0"
 	}
-	"Divider1"
-	{
-		"ControlName"		"Divider"
-		"fieldName"		"Divider1"
-		"xpos"		"32"
-		"ypos"		"72"
-		"wide"		"432"
-		"tall"		"2"
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"		"0"
-	}
 	"Divider2"
 	{
 		"ControlName"		"Divider"
@@ -774,5 +724,21 @@
 		"visible"		"0"
 		"enabled"		"1"
 		"tabPosition"		"0"
+	}
+	"BuildModeDialog"
+	{
+		"ControlName"		"BuildModeDialog"
+		"fieldName"		"BuildModeDialog"
+		"xpos"		"1318"
+		"ypos"		"626"
+		"wide"		"300"
+		"tall"		"420"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"0"
+		"settitlebarvisible"		"1"
+		"title"		"#Frame_Untitled"
 	}
 }
